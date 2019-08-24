@@ -2,6 +2,7 @@ import * as React from "react";
 import Tel from "app/components/Tel";
 import NT from "app/assets/nt.jpg";
 import SPK from "app/assets/spk.jpg";
+import TW from "app/assets/tw.jpg";
 
 export default () => (
   <div className="article-clean">
@@ -21,7 +22,6 @@ export default () => (
             <img
               src={NT}
               className="img-fluid"
-              alt="Responsive image"
             />
             <br />
             <br />
@@ -47,7 +47,6 @@ export default () => (
             <img
               src={SPK}
               className="img-fluid"
-              alt="Responsive image"
             />
             <br />
             <br />
@@ -64,6 +63,35 @@ export default () => (
               <br />
               星期日及公眾假期：歡迎預約
             </p>
+            <br/>
+            <br/>
+            <h3>荃灣</h3>
+            <p>
+              新界荃灣西樓角路202-216號昌寧商場2樓48號鋪
+            </p>
+            <img
+              src={TW}
+              className="img-fluid"
+            />
+            <br />
+            <br />
+            <p>
+              電話: <Tel code={"852"} telNumber={`23181190`} />
+              <br />
+              傳真: <Tel code={"852"} telNumber={`23181192`} />
+              <br />
+              電郵:{" "}
+              <a href="mailto:respect.esc@gmail.com">
+                respect.esc@gmail.com
+              </a>
+            </p>
+            <p>
+              星期一至六：上午11時至下午7時00分(敬請預約)
+              <br />
+              星期日及公眾假期：歡迎預約
+            </p>
+            <br />
+            <br />
           </div>
         </div>
       </div>
