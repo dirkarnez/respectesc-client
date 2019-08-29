@@ -1,8 +1,67 @@
 import * as React from "react";
 import Tel from "app/components/Tel";
-import NT from "app/assets/nt.jpg";
-import SPK from "app/assets/spk.jpg";
-import TW from "app/assets/tw.jpg";
+// import NT from "app/assets/nt.jpg";
+// import SPK from "app/assets/spk.jpg";
+// import TW from "app/assets/tw.jpg";
+import branchInfoList, { BranchInfo } from "app/data/branches";
+
+const Branch = ({
+  area, 
+  city,
+  address, 
+  travelInstruction, 
+  placeId,
+  telAreaCode, 
+  tel,
+  fax,
+  faxAreaCode,
+  email, 
+  workingHourWeekday, 
+  workingHourWeekend
+}: BranchInfo) => (
+  <React.Fragment>
+    <h3>{area}{city}</h3>
+      <p>
+      {address} 
+      {
+        travelInstruction && 
+        <React.Fragment>
+          <br /> ({travelInstruction})
+        </React.Fragment>
+      }
+      </p>
+      <div className="iframe-container">
+        <iframe 
+          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyA05OsZ4uYIUhCzhvoGc0rqr-iVu_q-usU&q=place_id:${placeId}`}
+          style={{border: "none"}}
+        >
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </div>
+        {/* <img
+          src={NT}
+          className="img-fluid"
+        /> */}
+        <br />
+        <p>
+          <i className="fas fa-phone-alt"/>&nbsp;<Tel code={telAreaCode} telNumber={tel}/>
+          { 
+            faxAreaCode && fax &&
+            <React.Fragment>
+              <br />
+              <i className="fas fa-fax"/>&nbsp;<Tel code={faxAreaCode} telNumber={fax} />
+            </React.Fragment>
+          }
+          <br />
+          <i className="fas fa-envelope"/>&nbsp;<a href={`mailto:${email}`}>{email}</a>
+        </p>
+        <p>
+          星期一至六:&nbsp;{workingHourWeekday}
+          <br />
+          星期日及公眾假期:&nbsp;{workingHourWeekend}
+        </p>
+  </React.Fragment>
+)
 
 export default () => (
   <div className="article-clean">
@@ -13,85 +72,16 @@ export default () => (
             <h1 className="text-center">聯絡我們</h1>
           </div>
           <div className="text">
-            <h3>新界</h3>
-            <p>
-              新界葵涌大連排道172-180號金龍工業中心第三期18樓J室
-              <br />
-              (港鐵葵芳站A出口，步行約8分鐘)
-            </p>
-            <img
-              src={NT}
-              className="img-fluid"
-            />
-            <br />
-            <br />
-            <p>
-              電話: <Tel code={"852"} telNumber={`31580708`} />
-              <br />
-              電郵:{" "}
-              <a href="mailto:respect.esc@gmail.com">respect.esc@gmail.com</a>
-            </p>
-            <p>
-              星期一至六：上午11時至下午7時00分(敬請預約)
-              <br />
-              星期日及公眾假期：歡迎預約
-            </p>
-            <br />
-            <br />
-            <h3>九龍</h3>
-            <p>
-              九龍新蒲崗太子道東704號新時代工貿商業中心15樓7室
-              <br />
-              (Mikiki商埸步行3分鐘)
-            </p>
-            <img
-              src={SPK}
-              className="img-fluid"
-            />
-            <br />
-            <br />
-            <p>
-              電話: <Tel code={"852"} telNumber={`36191728`} />
-              <br />
-              電郵:{" "}
-              <a href="mailto:respect.mendy@gmail.com">
-                respect.mendy@gmail.com
-              </a>
-            </p>
-            <p>
-              星期一至六：上午11時至下午7時00分(敬請預約)
-              <br />
-              星期日及公眾假期：歡迎預約
-            </p>
-            <br/>
-            <br/>
-            <h3>荃灣</h3>
-            <p>
-              新界荃灣西樓角路202-216號昌寧商場2樓48號鋪
-            </p>
-            <img
-              src={TW}
-              className="img-fluid"
-            />
-            <br />
-            <br />
-            <p>
-              電話: <Tel code={"852"} telNumber={`23181190`} />
-              <br />
-              傳真: <Tel code={"852"} telNumber={`23181192`} />
-              <br />
-              電郵:{" "}
-              <a href="mailto:respect.esc@gmail.com">
-                respect.esc@gmail.com
-              </a>
-            </p>
-            <p>
-              星期一至六：上午11時至下午7時00分(敬請預約)
-              <br />
-              星期日及公眾假期：歡迎預約
-            </p>
-            <br />
-            <br />
+            { 
+              branchInfoList && 
+              branchInfoList.map(branchInfo => (
+                <React.Fragment>
+                  <Branch {...branchInfo}/>
+                  <br />
+                  <br />
+                </React.Fragment>
+              ))
+            }
           </div>
         </div>
       </div>

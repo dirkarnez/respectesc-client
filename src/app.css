@@ -303,32 +303,47 @@
 
   
   /**/
-  * {
-    font-family: "Noto Sans TC","Microsoft JhengHei","Open Sans",sans-serif;
-  }
-  
-  .navbar-light .navbar-nav .nav-link {
-    font-weight: bold;
-    color: #00A3E8;
-  }
+* {
+  font-family: "Noto Sans TC","Microsoft JhengHei","Open Sans",sans-serif;
+}
 
-  .navbar-light .navbar-nav .nav-link:hover {
-    background-color: lightgray;
-  }
-  
-  .r-table .r-table-header {
-    background-color:#ccf0ff;
-  } 
+.navbar-light .navbar-nav .nav-link {
+  font-weight: bold;
+  color: #00A3E8;
+}
 
-  .r-table .r-table-data {
-    background-color: #F4F4F4;
-  } 
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: lightgray;
+}
+
+.r-table .r-table-header {
+  background-color:#ccf0ff;
+} 
+
+.r-table .r-table-data {
+  background-color: #F4F4F4;
+} 
 
 
-  .navbar-light .navbar-text {
-    color: black;
-  }
+.navbar-light .navbar-text {
+  color: black;
+}
 
-  .main-carousel {
-    margin-top: 10px;
-  }
+.main-carousel {
+  margin-top: 10px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

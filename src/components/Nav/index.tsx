@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import logo from "app/assets/logo.svg";
 import Tel from "app/components/Tel";
 import { routes } from "app/routes";
+import branchInfoList from "app/data/branches";
 
 export default class Header extends React.Component<RouteComponentProps, {}> {
   render() {
@@ -47,10 +48,19 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                     </li>
                   ))}
               </ul>
-              <span className="navbar-text">
-                葵芳 <Tel code={"852"} telNumber={`31580708`} /> &nbsp;|&nbsp; 新蒲崗{" "}
-                <Tel code={"852"} telNumber={`36191728`} />
-              </span>
+              {
+                branchInfoList && 
+                <span className="navbar-text">
+                  {
+                    branchInfoList.map(({city, telAreaCode, tel}, index) => (
+                      <React.Fragment key={index}>
+                        <i className="fas fa-phone-alt"/>&nbsp;{city}&nbsp;<Tel code={telAreaCode} telNumber={tel}/> 
+                        <br/>
+                      </React.Fragment>
+                    ))
+                  }
+                </span>
+              }
               {/* <span className="navbar-text">
                 <a href="#" className="login">
                   中 / Eng
