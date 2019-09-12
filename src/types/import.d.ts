@@ -17,3 +17,7 @@ declare module "*.md" {
   const content: string;
   export default content;
 }
+
+declare module "aos" {
+  export function init();
+}

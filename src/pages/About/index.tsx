@@ -13,9 +13,11 @@ export default () => (
               options={{
                 overrides: {
                   h1: {
-                    component: props => (
+                    component: ({children, ...rest}) => (
                       <div className="intro">
-                        <h1 {...props}/>
+                        <h1 {...rest}>
+                          <strong>{children}</strong>
+                        </h1>
                       </div>
                     ),
                     props: {
