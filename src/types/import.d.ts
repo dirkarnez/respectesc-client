@@ -12,3 +12,8 @@ declare module "*.jpg" {
   const content: any;
   export = content;
 }
+
+declare module "*.md" {
+  const content: string;
+  export default content;
+}

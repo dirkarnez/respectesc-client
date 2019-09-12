@@ -39,7 +39,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.tsx?$/i,
         use: 'babel-loader',
         exclude: /node_modules/,
       },
@@ -53,12 +53,17 @@ const config = {
         ]
       },
       {
-        test: /\.(gif|png|jpe?g|bmp|eot|woff|woff2|ttf|svg)/,
+        test: /\.(gif|png|jpe?g|bmp|eot|woff|woff2|ttf|svg)/i, // load file into src url
         use: [
           {
             loader: 'file-loader',
           }
         ],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.md$/i,
+        use: 'raw-loader',
         exclude: /node_modules/
       }
       // 
