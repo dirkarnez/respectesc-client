@@ -1,9 +1,7 @@
 import * as React from "react";
 import Tel from "app/components/Tel";
-// import NT from "app/assets/nt.jpg";
-// import SPK from "app/assets/spk.jpg";
-// import TW from "app/assets/tw.jpg";
 import branchInfoList, { BranchInfo } from "app/data/branches";
+import Base from "app/pages/Base";
 
 const Branch = ({
   area, 
@@ -64,27 +62,44 @@ const Branch = ({
 )
 
 export default () => (
-  <div className="article-clean">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
-          <div className="intro">
-            <h1 className="text-center">聯絡我們</h1>
-          </div>
-          <div className="text">
-            { 
-              branchInfoList && 
-              branchInfoList.map(branchInfo => (
-                <React.Fragment>
-                  <Branch {...branchInfo}/>
-                  <br />
-                  <br />
-                </React.Fragment>
-              ))
-            }
-          </div>
-        </div>
-      </div>
+  <Base>
+    <div className="intro">
+      <h1 className="text-center">
+        <strong>聯絡我們</strong>
+      </h1>
     </div>
-  </div>
+    { 
+      branchInfoList && 
+      branchInfoList.map((branchInfo, index) => (
+        <React.Fragment key={index}>
+          <Branch {...branchInfo}/>
+          <br />
+          <br />
+        </React.Fragment>
+      ))
+    }
+  </Base>
+  // <div className="article-clean">
+  //   <div className="container">
+  //     <div className="row">
+  //       <div className="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+  //         <div className="intro">
+  //           <h1 className="text-center">聯絡我們</h1>
+  //         </div>
+  //         <div className="text">
+  //           { 
+  //             branchInfoList && 
+  //             branchInfoList.map((branchInfo, index) => (
+  //               <React.Fragment key={index}>
+  //                 <Branch {...branchInfo}/>
+  //                 <br />
+  //                 <br />
+  //               </React.Fragment>
+  //             ))
+  //           }
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // </div>
 );

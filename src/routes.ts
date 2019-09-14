@@ -6,7 +6,6 @@ import Service from "./pages/Service";
 import Faq from "./pages/Faq";
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
-// import Terms from "./pages/Terms";
 
 interface HeaderMenuRoute {
     route: string,
@@ -23,5 +22,4 @@ export const routes: HeaderMenuRoute[] = [
     { route: "/quality", description: "外傭質素及培訓", onMenu: true, component: Quality },
     { route: "/contact", description: "聯絡我們", onMenu: true, component: Contact },
     { route: "/privacy", description: "私隱聲明", onMenu: false, component: Privacy }
-    // { route: "/terms", description: "私隱聲明", onMenu: false, component: Terms }
 ];

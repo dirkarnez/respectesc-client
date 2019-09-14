@@ -217,7 +217,7 @@ export default class Service extends React.Component<{}, ServiceState> {
     this.state = {
       selected: 0
     };
-
+    window.scrollTo(0, 0);
     this.select = this.select.bind(this);
   }
 
