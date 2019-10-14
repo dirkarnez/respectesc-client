@@ -8,11 +8,13 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "core-js": "^3.3.2",
     "markdown-to-jsx": "^6.10.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-responsive-carousel": "^3.1.49",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

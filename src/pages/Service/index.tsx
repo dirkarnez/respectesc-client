@@ -28,7 +28,7 @@ const titleContentList: TitleContent[] = [
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $10,980</Td>
+              <Td>HK $11,980</Td>
             </tr>
           </tbody>
         </Table>
@@ -104,11 +104,11 @@ const titleContentList: TitleContent[] = [
           <tbody>
             <tr>
               <Th>菲律賓女傭</Th>
-              <Td>HK $1,680</Td>
+              <Td>HK $1,980</Td>
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $1,680</Td>
+              <Td>HK $2,300</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
@@ -234,7 +234,7 @@ export default class Service extends React.Component<{}, ServiceState> {
           <div className="container">
             <div className="row">
               <div className="col-md-10 col-lg-3 offset-md-1">
-                <ul style={{ listStyleType: "none", margin: "0px", padding: "0px" }}>
+                <ul style={{ listStyleType: "none", margin: "0px", padding: "0px", cursor: "pointer" }}>
                   {titleContentList.map(({ title }, index) => (
                     <li
                       key={index}

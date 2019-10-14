@@ -16,6 +16,11 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
                     props: {
                         className: "text-center"
                     }
+                },
+                img: {
+                    component: ({src}: React.ImgHTMLAttributes<HTMLImageElement>) => (
+                        <img src={src ? require(`app/assets/${src}`): undefined} className="img-fluid"/>
+                    )
                 }
             }
         }}
