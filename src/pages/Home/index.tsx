@@ -1,5 +1,15 @@
 import * as React from "react";
-import Blockquote from "app/components/Blockquote";
+import gallery1 from "app/assets/gallery1.jpg";
+import gallery2 from "app/assets/gallery2.jpg";
+import gallery3 from "app/assets/gallery3.jpg";
+import gallery4 from "app/assets/gallery4.jpg";
+import gallery5 from "app/assets/gallery5.jpg";
+import gallery6 from "app/assets/gallery6.jpg";
+import gallery7 from "app/assets/gallery7.jpg";
+import gallery8 from "app/assets/gallery8.jpg";
+import gallery9 from "app/assets/gallery9.jpg";
+import gallery10 from "app/assets/gallery10.jpg";
+import gallery11 from "app/assets/gallery11.jpg";
 
 export default () => {
   return (
@@ -17,24 +27,43 @@ export default () => {
                 護家僱傭中心在香港的女傭業界中提供最優質的家傭中介服務。
                 <br />
                 護家僱傭中心竭誠為你服務，我們深信誠實和透明度高的辦事作風是成功建立長遠合作關係的重要因素。
-                <br />
-                <br />
-                <strong>
-                  我們的服務宗旨：將最優質的女傭推薦給僱主，減輕僱主壓力，促進主僱和諧相處。
-                </strong>
               </p>
+              <div className="card">
+                <div className="card-body">
+                  <h6 className="card-title">我們的服務宗旨</h6>
+                  <h3 className="text-muted card-subtitle mb-2">將最優質的女傭推薦給僱主，減輕僱主壓力，促進主僱和諧相處。</h3>
+                </div>
+              </div>
+              <div className="photo-gallery">
+                  <div className="container">
+                      <div className="intro">
+                          <h1 className="text-center" data-aos="fade-down">
+                            <strong>中心照片</strong>
+                          </h1>
+                      </div>
+                      <div className="row photos">
+                          {
+                            [
+                              gallery1,
+                              gallery2,
+                              gallery3,
+                              gallery4,
+                              gallery5,
+                              gallery6,
+                              gallery7,
+                              gallery8,
+                              gallery9,
+                              gallery10,
+                              gallery11
+                            ].map((gallery, index) => (
+                              <div key={index} className="col-sm-6 col-md-4 col-lg-3 item" data-aos="zoom-in"><a href={gallery} data-lightbox="photos"><img className="img-fluid" src={gallery}/></a></div>
+                            ))
+                          }
+                      </div>
+                  </div>
+              </div>
             </div>
           </div>
-          {/* <div className="col-md-10 col-lg-3 offset-md-1" style={{paddingTop: "50px", display: "flex", justifyContent: "center"}}>
-              <iframe
-                src={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRespect-Employment-Services-Centre%25E8%25AD%25B7%25E5%25AE%25B6%25E5%2583%25B1%25E5%2582%25AD%25E6%259C%258D%25E5%258B%2599%25E4%25B8%25AD%25E5%25BF%2583-546709025373005%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1816911088340155`}
-                width="340"
-                height="500"
-                style={{ border: "none", overflow: "hidden" }}
-                scrolling="no"
-                allow="encrypted-media"
-              />
-          </div> */}
         </div>
       </div>
     </div>

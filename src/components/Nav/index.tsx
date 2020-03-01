@@ -1,18 +1,7 @@
 import * as React from "react";
 import { Link, RouteComponentProps } from "react-router-dom";
-import gallery1 from "app/assets/gallery1.jpg";
-import gallery2 from "app/assets/gallery2.jpg";
-import gallery3 from "app/assets/gallery3.jpg";
-import gallery4 from "app/assets/gallery4.jpg";
-import gallery5 from "app/assets/gallery5.jpg";
-import gallery6 from "app/assets/gallery6.jpg";
-import gallery7 from "app/assets/gallery7.jpg";
-import gallery8 from "app/assets/gallery8.jpg";
-import gallery9 from "app/assets/gallery9.jpg";
-import gallery10 from "app/assets/gallery10.jpg";
-import gallery11 from "app/assets/gallery11.jpg";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from "react-responsive-carousel";
 import logo from "app/assets/logo.svg";
 import slogan from "app/assets/slogan.jpg"
 import Tel from "app/components/Tel";
@@ -27,19 +16,26 @@ interface MyCarouselProps {
 }
 
 interface MyCarouselState {
-  index: number
+  index: number,
+  handle: number
 }
 
 class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
   constructor(props: MyCarouselProps) {
     super(props);
-    this.state = { index: 0 };
+    this.state = { index: 0, handle: NaN };
   }
   
   componentDidMount() {
-    setInterval(() => {
-      this.setState({index: (this.state.index + 1) % this.props.testimonials.length})
-    }, this.props.interval);
+    this.setState({
+      handle: window.setInterval(() => {
+        this.setState({index: (this.state.index + 1) % this.props.testimonials.length})
+      }, this.props.interval)
+    });
+  }
+
+  componentWillUnmount() {
+    window.clearInterval(this.state.handle);
   }
   
   render() {
@@ -49,11 +45,12 @@ class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
       <div className="jumbotron jumbotron-fluid" style={{padding: "0px"}}>      
         <div 
           className="img-fluid jumbotron main-carousel" 
-          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${slogan}')`}}>
+          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${slogan}')`}}>
             {testimonials.map(({comment, from}, tIndex) => (
               index == tIndex && 
               <div key={tIndex} data-aos="fade-down" className="container">
-                <p className="lead">{comment}</p>
+                <span className="lead">{comment}</span>
+                <br/>
                 <br/>
                 <i className="fas fa-star"/>
                 <i className="fas fa-star"/>
@@ -113,7 +110,7 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
               </ul>
               {
                 branchInfoList && 
-                <span className="navbar-text">
+                <span className="navbar-text" data-aos="fade-down">
                   {
                     branchInfoList.map(({city, telAreaCode, tel}, index) => (
                       <React.Fragment key={index}>
