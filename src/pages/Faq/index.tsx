@@ -6,7 +6,7 @@ import Content from "app/components/Content";
 export default () => (
   <Base>
     <Content>
-      { faq }
+    { faq }
     </Content>
   </Base>
 );

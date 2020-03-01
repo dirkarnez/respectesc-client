@@ -5,4 +5,10 @@ interface TelProps {
     telNumber: string
 }
 
-export default ({ code, telNumber }: TelProps) => <a style={{color: "#007bff"}} href={`tel:+${code} ${telNumber}`}>+{code} {telNumber}</a>
+const Tel : React.FunctionComponent<TelProps> = ({ code, telNumber, children }) => (
+    <a href={`tel:+${code} ${telNumber}`}>
+        <i className="fas fa-phone-alt"/>&nbsp;{children}
+    </a>
+)
+
+export default Tel;

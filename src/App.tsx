@@ -18,7 +18,7 @@ function Base<T extends RouteComponentProps>(props: T) {
         <div style={{minHeight: "70vh"}}>
           <Switch>
             {
-              routes.map(({route, component}, index) => (
+              routes.map(({ route, component }, index) => (
                 <Route key={index} exact={route == "/"} path={route} component={component}/>
               ))
             }

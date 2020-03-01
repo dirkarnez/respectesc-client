@@ -111,11 +111,7 @@
   
   .header-blue .navbar .navbar-brand {
     font-weight: bold;
-    color: inherit;
-  }
-  
-  .header-blue .navbar .navbar-brand:hover {
-    color: #f0f0f0;
+    color: #2bc1ff;;
   }
   
   .header-blue .navbar .navbar-collapse {
@@ -303,8 +299,9 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-weight: bold;
-  color: #00A3E8;
+  font-weight: 500;
+  color: #2bc1ff;
+  font-size: 22px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -325,7 +322,35 @@
 }
 
 .main-carousel {
-  margin-top: 10px;
+  /*background-color: #001c28;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 50px;
+  line-height: 1.5;
+  font-size: 2em;
+  color: white;
+}
+
+.main-carousel > div > span {
+  white-space: pre-wrap;
+  text-shadow: 1px 1px 2px #343434, 2px 2px 10px #000;
+}
+
+.main-carousel > div > span > .from {
+  font-size: 0.6em;
+}
+
+.main-carousel > div > span > .fa-star {
+  font-size: 15px;
+  color: #ffb546;
+  margin: 2px;
 }
 
 .iframe-container {
@@ -347,4 +372,8 @@ blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
+}
+
+.article-clean .text {
+  width: 100%;
 }

@@ -232,8 +232,8 @@ export default class Service extends React.Component<{}, ServiceState> {
       <div style={{ paddingTop: "50px" }}>
         <div className="article-clean">
           <div className="container">
-            <div className="row">
-              <div className="col-md-10 col-lg-3 offset-md-1">
+            <div className="row" data-aos="fade-down">
+              <div className="col-md-12 col-lg-3">
                 <ul style={{ listStyleType: "none", margin: "0px", padding: "0px", cursor: "pointer" }}>
                   {titleContentList.map(({ title }, index) => (
                     <li
@@ -249,7 +249,7 @@ export default class Service extends React.Component<{}, ServiceState> {
                   ))}
                 </ul>
               </div>
-              <div className="col-md-10 col-lg-7 offset-md-1 offset-lg-0">
+              <div className="col-md-12 col-lg-9">
                 {renderer ? renderer.content() : ""}
               </div>
             </div>

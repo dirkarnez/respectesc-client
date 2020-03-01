@@ -8,7 +8,7 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
                 h1: {
                     component: ({ children, ...rest }) => (
                         <div className="intro">
-                            <h1 {...rest}>
+                            <h1 {...rest} data-aos="fade-down">
                                 <strong>{children}</strong>
                             </h1>
                         </div>
@@ -19,8 +19,14 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
                 },
                 img: {
                     component: ({src}: React.ImgHTMLAttributes<HTMLImageElement>) => (
-                        <img src={src ? require(`app/assets/${src}`): undefined} className="img-fluid"/>
+                        <img data-aos="fade-down" src={src ? require(`app/assets/${src}`): undefined} className="img-fluid"/>
                     )
+                },
+                p: {
+                    component: props => (<p data-aos="fade-down" {...props}></p>)
+                },
+                li: {
+                    component: props => (<li data-aos="fade-down" {...props}></li>)
                 }
             }
         }}

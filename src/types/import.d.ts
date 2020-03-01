@@ -19,5 +19,8 @@ declare module "*.md" {
 }
 
 declare module "aos" {
-  export function init();
+  export function init({
+    once: boolean,
+    duration: number
+  });
 }

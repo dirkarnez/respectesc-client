@@ -1,5 +1,6 @@
 import * as React from "react";
 import Tel from "app/components/Tel";
+import Fax from "app/components/Fax";
 import branchInfoList, { BranchInfo } from "app/data/branches";
 import Base from "app/pages/Base";
 
@@ -17,9 +18,9 @@ const Branch = ({
   workingHourWeekday, 
   workingHourWeekend
 }: BranchInfo) => (
-  <React.Fragment>
-    <h3>{area}{city}</h3>
-      <p>
+  <div data-aos="fade-down">
+    <strong>{area}{city}</strong>
+    <p>
       {address} 
       {
         travelInstruction && 
@@ -27,48 +28,45 @@ const Branch = ({
           <br /> ({travelInstruction})
         </React.Fragment>
       }
-      </p>
-      <div className="iframe-container">
-        <iframe 
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyA05OsZ4uYIUhCzhvoGc0rqr-iVu_q-usU&q=place_id:${placeId}`}
-          style={{border: "none"}}
-        >
-          <p>Your browser does not support iframes.</p>
-        </iframe>
-      </div>
-        {/* <img
-          src={NT}
-          className="img-fluid"
-        /> */}
-        <br />
-        <p>
-          <i className="fas fa-phone-alt"/>&nbsp;<Tel code={telAreaCode} telNumber={tel}/>
-          { 
-            faxAreaCode && fax &&
-            <React.Fragment>
-              <br />
-              <i className="fas fa-fax"/>&nbsp;<Tel code={faxAreaCode} telNumber={fax} />
-            </React.Fragment>
-          }
+    </p>
+    <div data-aos="fade-down" className="iframe-container">
+      <iframe
+        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyA05OsZ4uYIUhCzhvoGc0rqr-iVu_q-usU&q=place_id:${placeId}`}
+        style={{border: "none"}}
+      >
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+    </div>
+    <br />
+    <p>
+      <Tel code={telAreaCode} telNumber={tel}>+{telAreaCode} {tel}</Tel>
+      { 
+        faxAreaCode && fax &&
+        <React.Fragment>
           <br />
-          <i className="fas fa-envelope"/>&nbsp;<a href={`mailto:${email}`}>{email}</a>
-        </p>
-        <p>
-          星期一至六:&nbsp;{workingHourWeekday}
-          <br />
-          星期日及公眾假期:&nbsp;{workingHourWeekend}
-        </p>
-  </React.Fragment>
+          <Fax code={faxAreaCode} faxNumber={fax}>+{faxAreaCode} {fax}</Fax>
+        </React.Fragment>
+      }
+      <br />
+      <a href={`mailto:${email}`}><i className="fas fa-envelope"/>&nbsp;{email}</a>
+    </p>
+    <p>
+      星期一至六:&nbsp;{workingHourWeekday}
+      <br />
+      星期日及公眾假期:&nbsp;{workingHourWeekend}
+    </p>
+  </div>
 )
 
 export default () => (
   <Base>
     <div className="intro">
-      <h1 className="text-center">
+      <h1 className="text-center" data-aos="fade-down">
         <strong>聯絡我們</strong>
       </h1>
     </div>
-    { 
+    <div data-aos="fade-down" className="aos-init aos-animate">
+      { 
       branchInfoList && 
       branchInfoList.map((branchInfo, index) => (
         <React.Fragment key={index}>
@@ -78,6 +76,7 @@ export default () => (
         </React.Fragment>
       ))
     }
+    </div>
   </Base>
   // <div className="article-clean">
   //   <div className="container">

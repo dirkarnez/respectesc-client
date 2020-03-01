@@ -5,7 +5,7 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 import AOS from 'aos';
 
-AOS.init();
+AOS.init({once: true, duration: 1000});
 
 ReactDOM.render(<App />, document.getElementById('app'));
 
