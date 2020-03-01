@@ -37,38 +37,34 @@ class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
   }
   
   componentDidMount() {
-    (window as any).textFit(document.querySelector(".main-carousel > div"));
-
     setInterval(() => {
       this.setState({index: (this.state.index + 1) % this.props.testimonials.length})
     }, this.props.interval);
   }
-
-  componentDidUpdate() {
-    (window as any).textFit(document.querySelector(".main-carousel > div"));
-  }
-
+  
   render() {
     const { testimonials } = this.props;
     const { index } = this.state;
     return (
-      <div className="main-carousel" style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${slogan}')`
-      }}>
-        {testimonials.map(({comment, from}, tIndex) => (
-          index == tIndex && 
-          <div key={tIndex} data-aos="fade-down">
-            {comment}
-            <br/>
-            <i className="fas fa-star"/>
-            <i className="fas fa-star"/>
-            <i className="fas fa-star"/>
-            <i className="fas fa-star"/>
-            <i className="fas fa-star"/>
-            <br/>
-            <span className="from">{from}</span>
-          </div>
-        ))}
+      <div className="jumbotron jumbotron-fluid" style={{padding: "0px"}}>      
+        <div 
+          className="img-fluid jumbotron main-carousel" 
+          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${slogan}')`}}>
+            {testimonials.map(({comment, from}, tIndex) => (
+              index == tIndex && 
+              <div key={tIndex} data-aos="fade-down" className="container">
+                <p className="lead">{comment}</p>
+                <br/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <br/>
+                <span className="from">{from}</span>
+              </div>
+            ))}
+        </div>
       </div>
     );
   }

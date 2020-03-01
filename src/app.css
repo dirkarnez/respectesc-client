@@ -321,33 +321,18 @@
   color: black;
 }
 
+
 .main-carousel {
-  /*background-color: #001c28;*/
+  height: 400px;
+  border-radius: unset;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px 50px;
-  line-height: 1.5;
-  font-size: 2em;
   color: white;
-}
-
-.main-carousel > div > span {
-  white-space: pre-wrap;
   text-shadow: 1px 1px 2px #343434, 2px 2px 10px #000;
 }
 
-.main-carousel > div > span > .from {
-  font-size: 0.6em;
-}
-
-.main-carousel > div > span > .fa-star {
+.fa-star {
   font-size: 15px;
   color: #ffb546;
   margin: 2px;
@@ -372,8 +357,4 @@ blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
-}
-
-.article-clean .text {
-  width: 100%;
 }

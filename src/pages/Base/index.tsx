@@ -6,8 +6,10 @@ const Base: React.FunctionComponent<{}> = ({ children }) => {
     <div className="article-clean">
       <div className="container">
         <div className="row">
-            <div className="text">
-              { children }
+            <div className="col">
+              <div className="text">
+                { children }
+              </div>
             </div>
         </div>
       </div>

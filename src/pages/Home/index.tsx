@@ -6,11 +6,13 @@ export default () => {
     <div className="article-clean">
       <div className="container">
         <div className="row">
-          <div className="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+          <div className="col">
           <div className="intro">
-              <h1 className="text-center"><strong>護家僱傭中心</strong></h1>
+              <h1 className="text-center" data-aos="fade-down">
+                <strong>護家僱傭中心</strong>
+              </h1>
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade-down">
               <p>
                 護家僱傭中心在香港的女傭業界中提供最優質的家傭中介服務。
                 <br />
