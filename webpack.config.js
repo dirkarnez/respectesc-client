@@ -85,7 +85,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '護家僱傭中心 - Respect Employment Services Centre',
+      title: '護家僱傭服務中心 - Respect Employment Services Centre',
       template: 'src/index.html',
     }),
     new MiniCssExtractPlugin({

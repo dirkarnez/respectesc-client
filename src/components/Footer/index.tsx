@@ -21,7 +21,7 @@ export default () => (
               src={labordep}
             />
             <br />
-            勞工處牌照號碼: 56987
+            持勞工處牌照
           </div>
           <div style={{ padding: "20px" }}>
             <img
@@ -29,7 +29,7 @@ export default () => (
               src={philippineConsulateGeneral}
             />
             <br />
-            菲律賓駐港領事館證書號碼: 1029526
+            持菲律賓駐港領事館證書
           </div>
         </div>
         <div className="row justify-content-center" style={{ textAlign: "center" }}>

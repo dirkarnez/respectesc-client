@@ -19,14 +19,14 @@ export default () => {
           <div className="col">
           <div className="intro">
               <h1 className="text-center" data-aos="fade-down">
-                <strong>護家僱傭中心</strong>
+                <strong>護家僱傭服務中心</strong>
               </h1>
             </div>
             <div className="text" data-aos="fade-down">
               <p>
-                護家僱傭中心在香港的女傭業界中提供最優質的家傭中介服務。
+                護家僱傭服務中心在香港的女傭業界中提供最優質的家傭中介服務。
                 <br />
-                護家僱傭中心竭誠為你服務，我們深信誠實和透明度高的辦事作風是成功建立長遠合作關係的重要因素。
+                護家僱傭服務中心竭誠為你服務，我們深信誠實和透明度高的辦事作風是成功建立長遠合作關係的重要因素。
               </p>
               <div className="card">
                 <div className="card-body">

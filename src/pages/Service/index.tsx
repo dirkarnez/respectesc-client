@@ -20,15 +20,15 @@ const titleContentList: TitleContent[] = [
           <tbody>
             <tr>
               <Th>菲律賓女傭</Th>
-              <Td>HK $10,980</Td>
+              <Td>HK $10,980 或以上</Td>
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $10,980</Td>
+              <Td>HK $10,980 或以上</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $11,980</Td>
+              <Td>HK $11,980 或以上</Td>
             </tr>
           </tbody>
         </Table>
@@ -64,15 +64,15 @@ const titleContentList: TitleContent[] = [
           <tbody>
             <tr>
               <Th>菲律賓女傭</Th>
-              <Td>HK $8,880</Td>
+              <Td>HK $8,880 或以上</Td>
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $8,880</Td>
+              <Td>HK $8,880 或以上</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $8,880</Td>
+              <Td>HK $8,880 或以上</Td>
             </tr>
           </tbody>
         </Table>
@@ -104,7 +104,7 @@ const titleContentList: TitleContent[] = [
           <tbody>
             <tr>
               <Th>菲律賓女傭</Th>
-              <Td>HK $1,980</Td>
+              <Td>HK $2,300</Td>
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
@@ -143,15 +143,15 @@ const titleContentList: TitleContent[] = [
           <tbody>
             <tr>
               <Th>菲律賓女傭</Th>
-              <Td>HK $5,880</Td>
+              <Td>HK $5,880 或以上</Td>
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $5,880</Td>
+              <Td>HK $5,880 或以上</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $5,880</Td>
+              <Td>HK $5,880 或以上</Td>
             </tr>
           </tbody>
         </Table>
