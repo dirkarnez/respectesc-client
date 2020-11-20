@@ -108,11 +108,11 @@ const titleContentList: TitleContent[] = [
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $2,300</Td>
+              <Td>HK $2,800</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $2,300</Td>
+              <Td>HK $2,800</Td>
             </tr>
           </tbody>
         </Table>
@@ -176,26 +176,30 @@ const titleContentList: TitleContent[] = [
             <tr>
               <Th>保障利益</Th>
               <Th>一年</Th>
-              <Th>二年</Th>
+              <Th>兩年</Th>
             </tr>
             <tr>
-              <Th>基本勞工保險</Th>
-              <Td>HK $285</Td>
-              <Td>HK $492</Td>
+              <Th>Plan A<br/>(基本勞工保險)*</Th>
+              <Td>HK $755</Td>
+              <Td>HK $1,250</Td>
             </tr>
             <tr>
-              <Th>基本勞工保險 + 門診及住院醫療</Th>
-              <Td>HK $719</Td>
-              <Td>HK $1299</Td>
+              <Th>Plan B<br/>(基本勞工保險。另外癌症及心臟病額外保障)*</Th>
+              <Td>HK $950</Td>
+              <Td>HK $1,550</Td>
+            </tr>
+            <tr>
+              <Th>Plan C<br/>(保障額更大之基本勞工保險。另外癌症，心臟病及主要疾病額外保障)*</Th>
+              <Td>HK $1,300</Td>
+              <Td>HK $2,000</Td>
             </tr>
           </tbody>
         </Table>
         <br />
-        <p>本公司採用<strong>美亞保險香港有限公司 – AIG 的家傭保險計劃</strong>。</p>
-        <p>本公司可為客人提供持牌保險顧問解釋保險內容及協助索償程序。</p>
-        <br/>
-        <strong>美亞香港簡介</strong>
-        <p>憑藉超過80年的本地經驗、AIG遍佈100個國家及地區的全球業務以及服務8,800萬名客户的國際網絡，美亞香港 (美亞保險香港有限公司) 為個人、家庭、小型企業和跨國公司，提供各類型的保險產品。</p>
+        <p>
+          <h5>* 本公司可協助客人聯絡保險有效持牌人，查詢保障的內容</h5>
+          <h5>* 可聯絡護家僱傭服務中心查詢有關家傭保的資料</h5>
+        </p>
       </div>
     ) 
   }
@@ -250,6 +254,7 @@ export default class Service extends React.Component<{}, ServiceState> {
                 </ul>
               </div>
               <div className="col-md-12 col-lg-9">
+                <br/>
                 {renderer ? renderer.content() : ""}
               </div>
             </div>
