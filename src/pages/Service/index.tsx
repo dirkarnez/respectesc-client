@@ -44,7 +44,7 @@ const titleContentList: TitleContent[] = [
           <li>菲律賓語，柬埔寨語，印尼語翻譯服務及女傭輔導</li>
           <li>代女傭辦理領事館報到手續及協助女傭領取香港身份証</li>
           <li>12個月內可更換女傭一次 (需另付原價費用80%)</li>
-          <li>送首2年本地勞工保險或香港驗身檢查</li>
+          <li>送香港驗身檢查</li>
         </ul>
       </div>
     )
@@ -83,7 +83,7 @@ const titleContentList: TitleContent[] = [
           <li>駐港領事館簽發合約的公證費用</li>
           <li>包括在港健康驗身檢查：(包括驗孕、乙型肝炎、胸肺、性病及愛滋病檢驗)</li>
           <li>12個月內更換傭人、需付聘請新傭人當時費用之80%。</li>
-          <li>可用優惠價購買本地勞工保險</li>
+          <li>可代辦本地勞工保險</li>
           <li>不包來港機票</li>
         </ul>
       </div>
@@ -108,11 +108,11 @@ const titleContentList: TitleContent[] = [
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $2,800</Td>
+              <Td>HK $3,000</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $2,800</Td>
+              <Td>HK $3,000</Td>
             </tr>
           </tbody>
         </Table>
