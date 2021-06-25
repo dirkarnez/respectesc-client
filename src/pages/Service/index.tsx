@@ -108,11 +108,11 @@ const titleContentList: TitleContent[] = [
             </tr>
             <tr>
               <Th>柬埔寨女傭</Th>
-              <Td>HK $3,500</Td>
+              <Td>HK $4,200</Td>
             </tr>
             <tr>
               <Th>印尼女傭</Th>
-              <Td>HK $3,500</Td>
+              <Td>HK $3,800</Td>
             </tr>
           </tbody>
         </Table>

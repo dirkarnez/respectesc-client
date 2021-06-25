@@ -17,12 +17,14 @@ export default () => (
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-sm-12 col-md-4 text-center" style={{ padding: "20px" }}>
-            <img
-              className="img-fluid"
-              src={labordep}
-            />
+            <a href="https://www.labour.gov.hk/" target="_blank">
+              <img
+                className="img-fluid"
+                src={labordep}
+              />
+            </a>
             <br />
-            <h4>持勞工處牌照</h4>
+            <h4>持有效<a href="https://www.labour.gov.hk/" target="_blank">勞工處</a>牌照號碼：63050</h4>
           </div>
           <div className="col-sm-12 col-md-4 text-center" style={{ padding: "20px" }}>
             <img
