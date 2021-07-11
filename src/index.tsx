@@ -4,6 +4,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 import AOS from 'aos';
+import "./i18n";
 
 AOS.init({once: true, duration: 1000});
 

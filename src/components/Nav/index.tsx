@@ -8,7 +8,8 @@ import Tel from "app/components/Tel";
 import { routes } from "app/routes";
 import branchInfoList from "app/data/branches";
 import { testimonials, Testimonial } from "app/data/testimonials";
-
+import { Translation } from 'react-i18next';
+import i18n from "app/i18n";
 
 interface MyCarouselProps {
   interval: number,
@@ -18,6 +19,27 @@ interface MyCarouselProps {
 interface MyCarouselState {
   index: number,
   handle: number
+}
+
+
+class I18nToggler extends React.Component<{}, {}> {
+  render() {
+    return (
+      <Translation>
+      {t => (
+        <div className="dropdown" data-aos="fade-down" style={{paddingRight: "10px"}}>
+          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {t(i18n.language)}
+          </button>
+          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <span className="dropdown-item" onClick={() => i18n.changeLanguage("zh-HK")}>{t("zh-HK")}</span>
+            <span className="dropdown-item" onClick={() => i18n.changeLanguage("en")}>{t("en")}</span>
+          </div>
+        </div>
+      )}
+    </Translation>
+    );
+  }
 }
 
 class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
@@ -93,6 +115,7 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
               <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navcol-1">
+              <I18nToggler/>
               <ul className="nav navbar-nav mr-auto">
                 {routes
                   .filter(({ onMenu }) => onMenu)
