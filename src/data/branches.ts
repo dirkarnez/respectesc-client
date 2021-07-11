@@ -1,7 +1,7 @@
 const branchInfoList: BranchInfo[] = [
     {
-        area: "新界",
-        city: "葵涌",
+        area: "new_territories",
+        city: "kwai_chung",
         address: "大連排道172-180號金龍工業中心第三期18樓J室",
         travelInstruction: "港鐵葵芳站A出口，步行約8分鐘",
         placeId: "ChIJccMCPL34AzQR6JWEipN7H4k",
@@ -12,8 +12,8 @@ const branchInfoList: BranchInfo[] = [
         workingHourWeekend: "歡迎預約"
     },
     {
-        area: "九龍",
-        city: "新蒲崗",
+        area: "kowloon",
+        city: "san_po_kong",
         address: "太子道東704號新時代工貿商業中心15樓7室",
         travelInstruction: "Mikiki商埸步行3分鐘",
         placeId: "ChIJIawuI9EGBDQROPREDacVlss",

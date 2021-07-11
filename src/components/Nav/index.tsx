@@ -26,17 +26,27 @@ class I18nToggler extends React.Component<{}, {}> {
   render() {
     return (
       <Translation>
-      {t => (
-        <div className="dropdown" data-aos="fade-down" style={{paddingRight: "10px"}}>
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {t(i18n.language)}
-          </button>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <span className="dropdown-item" onClick={() => i18n.changeLanguage("zh-HK")}>{t("zh-HK")}</span>
-            <span className="dropdown-item" onClick={() => i18n.changeLanguage("en")}>{t("en")}</span>
-          </div>
+      {t => i18n.language == "zh-HK" ? 
+        <div 
+          id="i18n-toggler" 
+          data-aos="fade-down" 
+          onClick={() => i18n.changeLanguage("en")}
+        >
+          <i className="fas fa-globe" style={{display: "inline"}}/>
+          &nbsp;
+          {t("en")}
         </div>
-      )}
+        :
+        <div 
+          id="i18n-toggler" 
+          data-aos="fade-down"
+          onClick={() => i18n.changeLanguage("zh-HK")}
+        >
+          <i className="fas fa-globe" style={{display: "inline"}}/>
+          &nbsp;
+          {t("zh-HK")}
+        </div>
+      }
     </Translation>
     );
   }
@@ -93,68 +103,75 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
   render() {
     const { location: { pathname }} = this.props;
     return (
-      <div className="header-blue">
-        <nav
-          className="navbar navbar-light navbar-expand-md"
-          style={{
-            boxShadow: "0 2px 6px 0 rgba(0,0,0,0.12), inset 0 -1px 0 0 #dadce0"
-          }}
-        >
-          <div className="container">
-            <Link className="navbar-brand" to="/ "style={{textAlign: "center"}}>
-              <img src={logo} />
-              <br/>
-              護家僱傭服務中心
-            </Link>
-            <button
-              className="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#navcol-1"
-            >
-              <span className="sr-only">Toggle navigation</span>
-              <span className="navbar-toggler-icon" />
-            </button>
-            <div className="collapse navbar-collapse" id="navcol-1">
-              <I18nToggler/>
-              <ul className="nav navbar-nav mr-auto">
-                {routes
-                  .filter(({ onMenu }) => onMenu)
-                  .map(({ route, description }, index) => (
-                    <li key={index} className="nav-item" role="presentation">
-                      <Link
-                        data-aos="fade-down"
-                        className={`nav-link menu-items ${route == pathname ? "active" : ""}`}
-                        to={route}
-                      >
-                        {description}
-                      </Link>
-                    </li>
-                  ))}
-              </ul>
-              {
-                branchInfoList && 
-                <span className="navbar-text" data-aos="fade-down">
-                  {
-                    branchInfoList.map(({city, telAreaCode, tel}, index) => (
-                      <React.Fragment key={index}>
-                        {/* <i className="fas fa-phone-alt"/>&nbsp;{city}&nbsp;<Tel code={telAreaCode} telNumber={tel}/>  */}
-                        <Tel code={telAreaCode} telNumber={tel}>{city}分行</Tel>
-                        <br/>
-                      </React.Fragment>
-                    ))
-                  }
-                </span>
-              }
-              {/* <span className="navbar-text">
-                <a href="#" className="login">
-                  中 / Eng
-                </a>
-              </span> */}
+      <Translation>
+        {
+          t => (
+            <div className="header-blue">
+              <nav
+                className="navbar navbar-light navbar-expand-md"
+                style={{
+                  boxShadow: "0 2px 6px 0 rgba(0,0,0,0.12), inset 0 -1px 0 0 #dadce0"
+                }}
+              >
+                <div className="container">
+                  <Link className="navbar-brand" to="/ "style={{textAlign: "center"}}>
+                    <img src={logo} />
+                    <br/>
+                    護家僱傭服務中心
+                  </Link>
+                  <button
+                    className="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navcol-1"
+                  >
+                    <span className="sr-only">Toggle navigation</span>
+                    <span className="navbar-toggler-icon" />
+                  </button>
+                  <div className="collapse navbar-collapse" id="navcol-1">
+                    <ul className="nav navbar-nav mr-auto">
+                      {routes
+                        .filter(({ onMenu }) => onMenu)
+                        .map(({ route, description }, index) => (
+                          <li key={index} className="nav-item" role="presentation">
+                            <Link
+                              data-aos="fade-down"
+                              className={`nav-link menu-items ${route == pathname ? "active" : ""}`}
+                              to={route}
+                            >
+                              {t(description)}
+                            </Link>
+                          </li>
+                        ))}
+                    </ul>
+                    <I18nToggler/>
+                    <br/>
+                    {
+                      branchInfoList && 
+                      <span className="navbar-text" data-aos="fade-down" style={{minWidth: "240px"}}>
+                        {
+                          branchInfoList.map(({city, telAreaCode, tel}, index) => (
+                            <React.Fragment key={index}>
+                              {/* <i className="fas fa-phone-alt"/>&nbsp;{city}&nbsp;<Tel code={telAreaCode} telNumber={tel}/>  */}
+                              <Tel code={telAreaCode} telNumber={tel}>{t(city)}{i18n.language == "en" ? <span>&nbsp;</span> : ""}{t("branch")}</Tel>
+                              <br/>
+                            </React.Fragment>
+                          ))
+                        }
+                      </span>
+                    }
+                    {/* <span className="navbar-text">
+                      <a href="#" className="login">
+                        中 / Eng
+                      </a>
+                    </span> */}
+                  </div>
+                </div>
+              </nav>
+              {pathname == "/" && <MyCarousel testimonials={testimonials} interval={5000}/>}
             </div>
-          </div>
-        </nav>
-        {pathname == "/" && <MyCarousel testimonials={testimonials} interval={5000}/>}
-      </div>
+          )
+        }
+      </Translation>
     );
   }
 }

@@ -15,11 +15,11 @@ interface HeaderMenuRoute {
 }
   
 export const routes: HeaderMenuRoute[] = [
-    { route: "/", description: "主頁", onMenu: false, component: Home },
-    { route: "/about", description: "公司簡介", onMenu: true, component: About },
-    { route: "/service", description: "服務範圍", onMenu: true, component: Service },
-    { route: "/faq", description: "常見問題", onMenu: true, component: Faq },
-    { route: "/quality", description: "外傭質素及培訓", onMenu: true, component: Quality },
-    { route: "/contact", description: "聯絡我們", onMenu: true, component: Contact },
-    { route: "/privacy", description: "私隱聲明", onMenu: false, component: Privacy }
+    { route: "/", description: "route.home", onMenu: false, component: Home },
+    { route: "/about", description: "route.about_us", onMenu: true, component: About },
+    { route: "/service", description: "route.our_services", onMenu: true, component: Service },
+    { route: "/faq", description: "route.faqs", onMenu: true, component: Faq },
+    { route: "/quality", description: "route.quality_training", onMenu: true, component: Quality },
+    { route: "/contact", description: "route.contact_us", onMenu: true, component: Contact },
+    { route: "/privacy", description: "route.privacy_policy", onMenu: false, component: Privacy }
 ];

@@ -404,3 +404,12 @@ blockquote {
 .photo-gallery .item {
   padding-bottom: 30px;
 }
+
+#i18n-toggler {
+  margin-right: 30px;
+}
+
+
+#i18n-toggler:hover {
+  color: gray;
+}
