@@ -6,16 +6,22 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
         options={{
             overrides: {
                 h1: {
-                    component: ({ children, ...rest }) => (
-                        <div className="intro">
-                            <h1 {...rest} data-aos="fade-down">
-                                <strong>{children}</strong>
-                            </h1>
-                        </div>
-                    ),
-                    props: {
-                        className: "text-center"
-                    }
+                    component: props => <h1 data-aos="fade-down" {...props}/>
+                },
+                h2: {
+                    component: props => <h2 data-aos="fade-down" {...props}/>
+                },
+                h3: {
+                    component: props => <h3 data-aos="fade-down" {...props}/>
+                },
+                h4: {
+                    component: props => <h4 data-aos="fade-down" {...props}/>
+                },
+                h5: {
+                    component: props => <h5 data-aos="fade-down" {...props}/>
+                },
+                h6: {
+                    component: props => <h6 data-aos="fade-down" {...props}/>
                 },
                 img: {
                     component: ({src}: React.ImgHTMLAttributes<HTMLImageElement>) => (
@@ -25,11 +31,11 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
                 p: {
                     component: props => <p data-aos="fade-down" {...props}/>
                 },
-                li: {
-                    component: props => <li data-aos="fade-down" {...props}/>
+                ul: {
+                    component: props => <ul data-aos="fade-down" {...props}/>
                 },
                 table: {
-                    component: props => <table {...props}/>,
+                    component: props => <table data-aos="fade-down" {...props}/>,
                     props: {
                         className: "table r-table"
                     }

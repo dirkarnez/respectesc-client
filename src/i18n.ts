@@ -4,6 +4,21 @@ import { initReactI18next } from 'react-i18next';
 import en_about from "app/data/en-about.md";
 import zhHK_about from "app/data/zh-HK-about.md";
 
+import en_overseas_domestic_helpers from "app/data/en-overseas-domestic-helpers.md";
+import zhHK_overseas_domestic_helpers from "app/data/zh-HK-overseas-domestic-helpers.md";
+
+import en_local_overseas_domestic_helpers from "app/data/en-local-overseas-domestic-helpers.md";
+import zhHK_local_overseas_domestic_helpers from "app/data/zh-HK-local-overseas-domestic-helpers.md";
+
+import en_contract_and_visa from "app/data/en-contract-and-visa.md";
+import zhHK_contract_and_visa from "app/data/zh-HK-contract-and-visa.md";
+
+import en_self_selected_overseas_domestic_helpers from "app/data/en-self-selected-overseas-domestic-helpers.md";
+import zhHK_self_selected_overseas_domestic_helpers from"app/data/zh-HK-self-selected-overseas-domestic-helpers.md";
+
+import en_compensation_insurance from "app/data/en-compensation-insurance.md";
+import zhHK_compensation_insurance from "app/data/zh-HK-compensation-insurance.md";
+
 import en_faqs from "app/data/en-faqs.md";
 import zhHK_faqs from "app/data/zh-HK-faqs.md";
 
@@ -19,6 +34,16 @@ const resources = {
             "route.home": "Home",
             "route.about_us": "About Us",
             "route.our_services": "Our Services",
+            "domestic_helpers.overseas.title": "Overseas domestic helpers",
+            "domestic_helpers.overseas.content": en_overseas_domestic_helpers,
+            "domestic_helpers.local_overseas.title": "Local overseas domestic helpers completed previous contract",
+            "domestic_helpers.local_overseas.content": en_local_overseas_domestic_helpers,
+            "contract_and_visa.title": "Contract renewal and visa application commission",
+            "contract_and_visa.content": en_contract_and_visa,
+            "domestic_helpers.self_selected_overseas.title": "Self-selected overseas domestic helpers",
+            "domestic_helpers.self_selected_overseas.content": en_self_selected_overseas_domestic_helpers,
+            "compensation_insurance.title": "Compensation insurance for domestic helpers",
+            "compensation_insurance.content": en_compensation_insurance,
             "route.faqs": "FAQs",
             "faqs": en_faqs,
             "route.quality_training": "Quality and Training",
@@ -54,6 +79,16 @@ const resources = {
             "route.home": "主頁",
             "route.about_us": "公司簡介",
             "route.our_services": "服務範圍",
+            "domestic_helpers.overseas.title": "海外傭工",
+            "domestic_helpers.overseas.content": zhHK_overseas_domestic_helpers,
+            "domestic_helpers.local_overseas.title": "本地(外籍)約滿傭工",
+            "domestic_helpers.local_overseas.content": zhHK_local_overseas_domestic_helpers,
+            "contract_and_visa.title": "續約及代辦簽證",
+            "contract_and_visa.content": zhHK_contract_and_visa,
+            "domestic_helpers.self_selected_overseas.title": "自選外籍傭工",
+            "domestic_helpers.self_selected_overseas.content": zhHK_self_selected_overseas_domestic_helpers,
+            "compensation_insurance.title": "家傭工傷及保險",
+            "compensation_insurance.content": zhHK_compensation_insurance,
             "route.faqs": "常見問題",
             "faqs": zhHK_faqs,
             "route.quality_training": "外傭質素及培訓",
