@@ -2,26 +2,26 @@ const branchInfoList: BranchInfo[] = [
     {
         area: "new_territories",
         city: "kwai_chung",
-        address: "大連排道172-180號金龍工業中心第三期18樓J室",
-        travelInstruction: "港鐵葵芳站A出口，步行約8分鐘",
+        address: "kwai_chung_branch_address",
+        travelInstruction: "kwai_chung_branch_travel_instruction",
         placeId: "ChIJccMCPL34AzQR6JWEipN7H4k",
         tel: "31580708",
         telAreaCode: "852",
         email: "respect.esc@gmail.com",
-        workingHourWeekday: "上午11時至下午7時00分 (敬請預約)",
-        workingHourWeekend: "歡迎預約"
+        workingHourWeekday: "kwai_chung_branch_workingHour_weekday",
+        workingHourWeekend: "kwai_chung_branch_workingHour_weekend"
     },
     {
         area: "kowloon",
         city: "san_po_kong",
-        address: "太子道東704號新時代工貿商業中心15樓7室",
-        travelInstruction: "Mikiki商埸步行3分鐘",
+        address: "san_po_kong_branch_address",
+        travelInstruction: "san_po_kong_branch_travel_instruction",
         placeId: "ChIJIawuI9EGBDQROPREDacVlss",
         tel: "36191728",
         telAreaCode: "852",
         email: "respect.mendy@gmail.com",
-        workingHourWeekday: "上午11時至下午7時00分 (敬請預約)",
-        workingHourWeekend: "歡迎預約"
+        workingHourWeekday: "san_po_kong_branch_workingHour_weekday",
+        workingHourWeekend: "san_po_kong_branch_workingHour_weekend"
     }
     // ,{
     //     area: "新界",

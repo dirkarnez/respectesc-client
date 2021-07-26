@@ -34,7 +34,7 @@ class I18nToggler extends React.Component<{}, {}> {
         >
           <i className="fas fa-globe" style={{display: "inline"}}/>
           &nbsp;
-          {t("en")}
+          EN
         </div>
         :
         <div 
@@ -44,7 +44,7 @@ class I18nToggler extends React.Component<{}, {}> {
         >
           <i className="fas fa-globe" style={{display: "inline"}}/>
           &nbsp;
-          {t("zh-HK")}
+          中
         </div>
       }
     </Translation>
@@ -77,7 +77,7 @@ class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
       <div className="jumbotron jumbotron-fluid" style={{padding: "0px"}}>      
         <div 
           className="img-fluid jumbotron main-carousel" 
-          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${slogan}')`}}>
+          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('${slogan}')`}}>
             {testimonials.map(({comment, from}, tIndex) => (
               index == tIndex && 
               <div key={tIndex} data-aos="fade-down" className="container">
@@ -117,7 +117,7 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                   <Link className="navbar-brand" to="/ "style={{textAlign: "center"}}>
                     <img src={logo} />
                     <br/>
-                    護家僱傭服務中心
+                    {t("company.name")}
                   </Link>
                   <button
                     className="navbar-toggler"
@@ -151,7 +151,6 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                         {
                           branchInfoList.map(({city, telAreaCode, tel}, index) => (
                             <React.Fragment key={index}>
-                              {/* <i className="fas fa-phone-alt"/>&nbsp;{city}&nbsp;<Tel code={telAreaCode} telNumber={tel}/>  */}
                               <Tel code={telAreaCode} telNumber={tel}>{t(city)}{i18n.language == "en" ? <span>&nbsp;</span> : ""}{t("branch")}</Tel>
                               <br/>
                             </React.Fragment>

@@ -1,12 +1,16 @@
 import * as React from "react";
 import Base from "app/pages/Base";
-import privacy from "app/data/privacy.md";
 import Content from "app/components/Content";
+import { Translation } from 'react-i18next';
 
 export default () => (
-  <Base>
-    <Content>
-      { privacy }
-    </Content>
-  </Base>
+  <Translation>
+    {t => (
+      <Base>
+        <Content>
+          { t("privacy") }
+        </Content>
+      </Base>
+    )}
+  </Translation>
 );

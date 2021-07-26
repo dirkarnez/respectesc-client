@@ -23,10 +23,28 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
                     )
                 },
                 p: {
-                    component: props => (<p data-aos="fade-down" {...props}></p>)
+                    component: props => <p data-aos="fade-down" {...props}/>
                 },
                 li: {
-                    component: props => (<li data-aos="fade-down" {...props}></li>)
+                    component: props => <li data-aos="fade-down" {...props}/>
+                },
+                table: {
+                    component: props => <table {...props}/>,
+                    props: {
+                        className: "table r-table"
+                    }
+                },
+                th: {
+                    component: props => <th {...props}/>,
+                    props: {
+                        className: "r-table-header"
+                    }
+                },
+                td: {
+                    component: props => <td {...props}/>,
+                    props: {
+                        className: "r-table-data"
+                    }
                 }
             }
         }}

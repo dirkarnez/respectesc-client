@@ -8,7 +8,7 @@ export default () => (
       {t => (
         <Base>
           <Content>
-            { t("about") }
+            { t("faqs") }
           </Content>
         </Base>
       )}

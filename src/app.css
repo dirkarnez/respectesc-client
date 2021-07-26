@@ -112,6 +112,7 @@
   .header-blue .navbar .navbar-brand {
     font-weight: bold;
     color: #2bc1ff;;
+    font-size: 1.2em;
   }
   
   .header-blue .navbar .navbar-collapse {
@@ -302,10 +303,6 @@
   font-weight: 500;
   color: #2bc1ff;
   font-size: 22px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  background-color: lightgray;
 }
 
 .r-table .r-table-header {
