@@ -19,6 +19,9 @@ import zhHK_self_selected_overseas_domestic_helpers from"app/data/zh-HK-self-sel
 import en_compensation_insurance from "app/data/en-compensation-insurance.md";
 import zhHK_compensation_insurance from "app/data/zh-HK-compensation-insurance.md";
 
+import en_quality_training from "app/data/en-quality-training.md";
+import zhHK_quality_training from "app/data/zh-HK-quality-training.md";
+
 import en_faqs from "app/data/en-faqs.md";
 import zhHK_faqs from "app/data/zh-HK-faqs.md";
 
@@ -30,6 +33,10 @@ const resources = {
         translation: {
             "company.name": "Respect Employment Services Centre",
             "company.photos": "Our Photos",
+            "home.line1": "Respect Employment Services Centre (Chinese: 護家僱傭服務中心) is the best domestic helper employment agency in Hong Kong.",
+            "home.line2": "We serve you wholeheartedly, and firmly believe that honesty and transparency are important for our successful and long-term relationship.",
+            "home.line3": "Our mission",
+            "home.line4": "To offer the best-quality domestic helpers to employers, thereby alleviating employers' stress and promoting harmonious employment relationships.",
             "about": en_about,
             "route.home": "Home",
             "route.about_us": "About Us",
@@ -47,6 +54,7 @@ const resources = {
             "route.faqs": "FAQs",
             "faqs": en_faqs,
             "route.quality_training": "Quality and Training",
+            "quality_training": en_quality_training,
             "route.contact_us": "Contact Us",
             "route.privacy_policy": "Privacy Policy",
             "branch": "Branch",
@@ -64,7 +72,7 @@ const resources = {
             "san_po_kong_branch_travel_instruction": "3 minutes walk from Mikiki shopping mall",
             "san_po_kong_branch_workingHour_weekday": "11:00 a.m. to 7:00 p.m. (please make an appointment)",
             "san_po_kong_branch_workingHour_weekend": "Welcome to make an appointment",
-            "licence_cambodia" : "Hold <a href=\"https://mfaic.gov.kh/\" target=\"_blank\">Cambodia</a> licence",
+            "licence_cambodia" : "Hold a valid <a href=\"https://mfaic.gov.kh/\" target=\"_blank\">Cambodia</a> licence",
             "licence_labour_department": "Hold a valid <a href=\"https://www.labour.gov.hk/\" target=\"_blank\">Labour Department</a> license number",
             "licence_philippine_consulate_general": "Hold a certificate issued by the <a href=\"https://hongkongpcg.dfa.gov.ph/\" target=\"_blank\">Philippine Consulate General</a>",
             "privacy_statement": "Privacy Statement",
@@ -75,6 +83,10 @@ const resources = {
         translation: {
             "company.name": "護家僱傭服務中心",
             "company.photos": "中心照片",
+            "home.line1": "護家僱傭服務中心中是全香港女傭業界最優質的家傭中介服務公司。",
+            "home.line2": "我們竭誠為你服務，深信誠實和透明度高的辦事作風是成功建立長遠合作關係的重要因素。",
+            "home.line3": "我們的服務宗旨",
+            "home.line4": "將最優質的女傭推薦給僱主，減輕僱主壓力，促進主僱和諧相處。",
             "about": zhHK_about,
             "route.home": "主頁",
             "route.about_us": "公司簡介",
@@ -92,6 +104,7 @@ const resources = {
             "route.faqs": "常見問題",
             "faqs": zhHK_faqs,
             "route.quality_training": "外傭質素及培訓",
+            "quality_training": zhHK_quality_training,
             "route.contact_us": "聯絡我們",
             "route.privacy_policy": "私隱聲明",
             "branch": "分行",
@@ -109,7 +122,7 @@ const resources = {
             "san_po_kong_branch_travel_instruction": "Mikiki商埸步行3分鐘",
             "san_po_kong_branch_workingHour_weekday": "上午11時至下午7時00分 (敬請預約)",
             "san_po_kong_branch_workingHour_weekend": "歡迎預約",
-            "licence_cambodia" : "持有<a href=\"https://mfaic.gov.kh/\" target=\"_blank\">柬埔寨</a>合法牌照",
+            "licence_cambodia" : "持有效<a href=\"https://mfaic.gov.kh/\" target=\"_blank\">柬埔寨</a>合法牌照",
             "licence_labour_department": "持有效<a href=\"https://www.labour.gov.hk/\" target=\"_blank\">勞工處</a>牌照號碼",
             "licence_philippine_consulate_general": "持<a href=\"https://hongkongpcg.dfa.gov.ph/\" target=\"_blank\">菲律賓駐港領事館</a>證書",
             "privacy_statement": "私隱聲明",

@@ -8,6 +8,8 @@ const Base: React.FunctionComponent<{}> = ({ children }) => {
         <div className="row">
             <div className="col">
               <div className="text">
+                <br/>
+                <br/>
                 { children }
               </div>
             </div>

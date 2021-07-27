@@ -27,14 +27,18 @@ export default () => {
                 </div>
                 <div className="text" data-aos="fade-down">
                   <p>
-                    護家僱傭服務中心在香港的女傭業界中提供最優質的家傭中介服務。
+                    {t("home.line1")}
                     <br />
-                    護家僱傭服務中心竭誠為你服務，我們深信誠實和透明度高的辦事作風是成功建立長遠合作關係的重要因素。
+                    {t("home.line2")}
                   </p>
                   <div className="card">
                     <div className="card-body">
-                      <h6 className="card-title">我們的服務宗旨</h6>
-                      <h3 className="text-muted card-subtitle mb-2">將最優質的女傭推薦給僱主，減輕僱主壓力，促進主僱和諧相處。</h3>
+                      <h6 className="card-title">
+                        {t("home.line3")}
+                      </h6>
+                      <h3 className="text-muted card-subtitle mb-2">
+                        {t("home.line4")}
+                      </h3>
                     </div>
                   </div>
                   <div className="photo-gallery">
@@ -59,7 +63,11 @@ export default () => {
                                   gallery10,
                                   gallery11
                                 ].map((gallery, index) => (
-                                  <div key={index} className="col-sm-6 col-md-4 col-lg-3 item" data-aos="zoom-in"><a href={gallery} data-lightbox="photos"><img className="img-fluid" src={gallery}/></a></div>
+                                  <div key={index} className="col-sm-6 col-md-4 col-lg-3 item" data-aos="zoom-in">
+                                    <a href={gallery} data-lightbox="photos">
+                                      <img className="img-fluid" src={gallery}/>
+                                    </a>
+                                  </div>
                                 ))
                               }
                           </div>

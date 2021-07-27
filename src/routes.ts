@@ -1,6 +1,6 @@
 import { RouteComponentProps } from "react-router";
 import Contact from "./pages/Contact";
-import Quality from "./pages/Quality";
+import QualityTraining from "./pages/QualityTraining";
 import About from "./pages/About";
 import Service from "./pages/Service";
 import Faqs from "./pages/Faqs";
@@ -19,7 +19,7 @@ export const routes: HeaderMenuRoute[] = [
     { route: "/about", description: "route.about_us", onMenu: true, component: About },
     { route: "/service", description: "route.our_services", onMenu: true, component: Service },
     { route: "/faqs", description: "route.faqs", onMenu: true, component: Faqs },
-    { route: "/quality", description: "route.quality_training", onMenu: true, component: Quality },
+    { route: "/quality-and-training", description: "route.quality_training", onMenu: true, component: QualityTraining },
     { route: "/contact", description: "route.contact_us", onMenu: true, component: Contact },
     { route: "/privacy", description: "route.privacy_policy", onMenu: false, component: Privacy }
 ];
