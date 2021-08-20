@@ -4,9 +4,9 @@ import Fax from "app/components/Fax";
 import branchInfoList, { BranchInfo } from "app/data/branches";
 import Base from "app/pages/Base";
 import { Translation } from 'react-i18next';
+import i18n from "app/i18n";
 
 const Branch = ({
-  area, 
   city,
   address, 
   travelInstruction, 
@@ -23,7 +23,10 @@ const Branch = ({
     <Translation>
       {t => (
         <div data-aos="fade-down">
-          <strong>{t(area)}{t(city)}</strong>
+          <strong>
+            {i18n.language == "zh-HK" && `${t(city)}${t("branch")}`}
+            {i18n.language == "en" && `${t(city)} ${t("branch")}`} 
+          </strong>
           <p>
             {t(address)} 
             {

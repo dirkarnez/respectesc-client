@@ -1,6 +1,5 @@
 const branchInfoList: BranchInfo[] = [
     {
-        area: "new_territories",
         city: "kwai_chung",
         address: "kwai_chung_branch_address",
         travelInstruction: "kwai_chung_branch_travel_instruction",
@@ -12,7 +11,6 @@ const branchInfoList: BranchInfo[] = [
         workingHourWeekend: "kwai_chung_branch_workingHour_weekend"
     },
     {
-        area: "kowloon",
         city: "san_po_kong",
         address: "san_po_kong_branch_address",
         travelInstruction: "san_po_kong_branch_travel_instruction",
@@ -39,7 +37,6 @@ const branchInfoList: BranchInfo[] = [
 ]
 
 export interface BranchInfo {
-    area: string,
     city: string,
     address: string,
     travelInstruction?: string,
