@@ -1,5 +1,10 @@
 respectesc-client
 =================
+### Gmail
+- 61112377
+- respect.esc.marketing@gmail.com
+- respectesc123
+
 ### TODO
 - [ ] hashed index.js instead, then remove public folder
 
