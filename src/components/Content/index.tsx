@@ -55,7 +55,7 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
             }
         }}
     >
-        {children}
+        {`${children}`}
     </Markdown>
 );
 

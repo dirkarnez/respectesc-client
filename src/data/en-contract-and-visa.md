@@ -13,11 +13,11 @@ Prices:
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $4,200</td>
+      <td>HK $4,300</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $3,800</td>
+      <td>HK $2,800</td>
     </tr>
   </tbody>
 </table>

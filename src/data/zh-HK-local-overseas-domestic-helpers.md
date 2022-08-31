@@ -9,15 +9,15 @@
   <tbody>
     <tr>
       <th>菲律賓女傭</th>
-      <td>HK $8,880 或以上</td>
+      <td>HK $14,980</td>
     </tr>
     <tr>
       <th>柬埔寨女傭</th>
-      <td>HK $8,880 或以上</td>
+      <td>HK $14,980</td>
     </tr>
     <tr>
       <th>印尼女傭</th>
-      <td>HK $8,880 或以上</td>
+      <td>HK $16,980</td>
     </tr>
   </tbody>
 </table>

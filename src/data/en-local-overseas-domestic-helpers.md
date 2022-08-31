@@ -9,15 +9,15 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $8,880 or above</td>
+      <td>HK $14,980</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $8,880 or above</td>
+      <td>HK $14,980</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $8,880 or above</td>
+      <td>HK $16,980</td>
     </tr>
   </tbody>
 </table>

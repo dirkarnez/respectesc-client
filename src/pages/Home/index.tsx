@@ -33,12 +33,10 @@ export default () => {
                   </p>
                   <div className="card">
                     <div className="card-body">
-                      <h6 className="card-title">
-                        {t("home.line3")}
-                      </h6>
-                      <h3 className="text-muted card-subtitle mb-2">
-                        {t("home.line4")}
-                      </h3>
+                      <blockquote className="blockquote" style={{fontSize: "2.25rem"}}>
+                        {t("home.line4")} 
+                        <footer className="blockquote-footer">{t("home.line3")}</footer>
+                      </blockquote>
                     </div>
                   </div>
                   <div className="photo-gallery">
