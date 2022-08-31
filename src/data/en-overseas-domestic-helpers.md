@@ -9,20 +9,24 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $10,980 or above</td>
+      <td>HK $14,980 (covers $800 air ticket)</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $10,980 or above</td>
+      <td>HK $13,980 (covers $1,000 air ticket)</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $11,980 or above</td>
+      <td>HK $18,980 (covers $3,000 air ticket. This price requires the domestic helper to have the all the documents and passport ready beforehand. If any of the document or passport expires, additional fees will be charged for replacement.)</td>
     </tr>
   </tbody>
 </table>
 
-##### Price above includes:
+##### Please note:
+  - Above prices include all document handling fees, visa fees and body check in Hong Kong.
+  - Above prices do not include COVID-19 test and hotel fees (the employer is responsible for these two)
+
+##### Price above includes (except specifically noted item above):
   - Fees for local consulate contract, documents and procedures
   - Fees for handling documents and procedures of the related government
   - Working visa fee for the Hong Kong Immigration Department

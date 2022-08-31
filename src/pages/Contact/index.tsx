@@ -23,10 +23,10 @@ const Branch = ({
     <Translation>
       {t => (
         <div data-aos="fade-down">
-          <strong>
+          <h1>
             {i18n.language == "zh-HK" && `${t(city)}${t("branch")}`}
             {i18n.language == "en" && `${t(city)} ${t("branch")}`} 
-          </strong>
+          </h1>
           <p>
             {t(address)} 
             {

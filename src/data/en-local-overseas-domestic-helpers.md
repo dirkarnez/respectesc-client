@@ -23,7 +23,7 @@ Prices:
 </table>
 
 
-##### Price above includes：
+##### Price above includes (except specifically noted item above):
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
   - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong
