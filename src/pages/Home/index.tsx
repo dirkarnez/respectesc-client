@@ -1,11 +1,12 @@
 import * as React from "react";
 import gallery1_new from "app/assets/0c2423ac-b39e-4438-897d-1e750f8102b7.jpg";
-import gallery2_new from "app/assets/1c89279e-a10d-4181-bf7e-4986517b6354.jpg";
-import gallery3_new from "app/assets/5c031451-0cba-4d1a-8e45-b0e9f5af1a51.jpg";
-import gallery4_new from "app/assets/74d971cb-b688-492d-8757-6cc02449b075.jpg";
-import gallery5_new from "app/assets/ca41664a-f1fa-4b6e-8995-31e1c965d6ea.jpg";
-import gallery6_new from "app/assets/d8af4fd3-44ba-49c7-bdc7-964dcd533b9f.jpg";
-import gallery7_new from "app/assets/d87f6f94-4446-4efa-afd9-6e3bd6d30b17.jpg";
+import gallery2_new from "app/assets/f9c2c71c-478c-4367-8c76-2de0e31fa35e.jpg";
+import gallery3_new from "app/assets/1c89279e-a10d-4181-bf7e-4986517b6354.jpg";
+import gallery4_new from "app/assets/5c031451-0cba-4d1a-8e45-b0e9f5af1a51.jpg";
+import gallery5_new from "app/assets/74d971cb-b688-492d-8757-6cc02449b075.jpg";
+import gallery6_new from "app/assets/ca41664a-f1fa-4b6e-8995-31e1c965d6ea.jpg";
+import gallery7_new from "app/assets/d8af4fd3-44ba-49c7-bdc7-964dcd533b9f.jpg";
+import gallery8_new from "app/assets/d87f6f94-4446-4efa-afd9-6e3bd6d30b17.jpg";
 
 import gallery1_prev from "app/assets/gallery1.jpg";
 import gallery2_prev from "app/assets/gallery2.jpg";
@@ -65,6 +66,7 @@ export default () => {
                             gallery5_new,
                             gallery6_new,
                             gallery7_new,
+                            gallery8_new,
                             gallery1_prev,
                             gallery2_prev,
                             gallery3_prev,
