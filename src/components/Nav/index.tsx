@@ -27,7 +27,7 @@ class I18nToggler extends React.Component<{}, {}> {
     return (
       <Translation>
       {t => i18n.language == "zh-HK" ? 
-        <div 
+        <a href={"javascript:void(0)"}
           id="i18n-toggler" 
           data-aos="fade-down" 
           onClick={() => i18n.changeLanguage("en")}
@@ -35,9 +35,9 @@ class I18nToggler extends React.Component<{}, {}> {
           <i className="fas fa-globe" style={{display: "inline"}}/>
           &nbsp;
           EN
-        </div>
+        </a>
         :
-        <div 
+        <a href={"javascript:void(0)"}
           id="i18n-toggler" 
           data-aos="fade-down"
           onClick={() => i18n.changeLanguage("zh-HK")}
@@ -45,7 +45,7 @@ class I18nToggler extends React.Component<{}, {}> {
           <i className="fas fa-globe" style={{display: "inline"}}/>
           &nbsp;
           中
-        </div>
+        </a>
       }
     </Translation>
     );
