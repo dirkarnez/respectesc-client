@@ -28,7 +28,7 @@ const config = {
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: './[name].js',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],

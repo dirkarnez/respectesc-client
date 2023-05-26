@@ -21,31 +21,55 @@ interface MyCarouselState {
   handle: number
 }
 
-
-class I18nToggler extends React.Component<{}, {}> {
+class I18nToggler extends React.Component<RouteComponentProps, {}> {
   render() {
+    const { location: { pathname }, match: { path }} = this.props;
     return (
       <Translation>
       {t => i18n.language == "zh-HK" ? 
-        <a href={"javascript:void(0)"}
-          id="i18n-toggler" 
-          data-aos="fade-down" 
-          onClick={() => i18n.changeLanguage("en")}
-        >
-          <i className="fas fa-globe" style={{display: "inline"}}/>
-          &nbsp;
-          EN
+        // <div
+        //   id="i18n-toggler" 
+        //   data-aos="fade-down" 
+        //   onClick={() => i18n.changeLanguage("en")}
+        // >
+        //   <i className="fas fa-globe" style={{display: "inline"}}/>
+        //   &nbsp;
+        //   EN
+        // </div>
+        // :
+        // <div 
+        //   id="i18n-toggler" 
+        //   data-aos="fade-down"
+        //   onClick={() => i18n.changeLanguage("zh-HK")}
+        // >
+        //   <i className="fas fa-globe" style={{display: "inline"}}/>
+        //   &nbsp;
+        //   中
+        // </div>
+        <a
+            id="i18n-toggler" 
+            href={`/en${pathname.slice("/zh-HK".length)}`}
+            // onClick={() => i18n.changeLanguage("zh-HK")}
+          >
+            <i className="fas fa-globe" 
+            data-aos="fade-down"
+            style={{display: "inline"}}/>
+            &nbsp;
+            EN
         </a>
         :
-        <a href={"javascript:void(0)"}
+        <a
           id="i18n-toggler" 
-          data-aos="fade-down"
-          onClick={() => i18n.changeLanguage("zh-HK")}
+          href={`/zh-HK${pathname.slice("/en".length)}`}
+          // onClick={() => i18n.changeLanguage("zh-HK")}
         >
-          <i className="fas fa-globe" style={{display: "inline"}}/>
+          <i className="fas fa-globe" 
+          data-aos="fade-down"
+          style={{display: "inline"}}/>
           &nbsp;
           中
-        </a>
+      </a>
+
       }
     </Translation>
     );
@@ -101,7 +125,8 @@ class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
 
 export default class Header extends React.Component<RouteComponentProps, {}> {
   render() {
-    const { location: { pathname }} = this.props;
+    const { location: { pathname }, match: { path }} = this.props;
+
     return (
       <Translation>
         {
@@ -114,7 +139,7 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                 }}
               >
                 <div className="container">
-                  <Link className="navbar-brand" to="/ "style={{textAlign: "center"}}>
+                  <Link className="navbar-brand" to={path} style={{textAlign: "center"}}>
                     <img src={logo} />
                     <br/>
                     {t("company.name")}
@@ -136,14 +161,14 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                             <Link
                               data-aos="fade-down"
                               className={`nav-link menu-items ${route == pathname ? "active" : ""}`}
-                              to={route}
+                              to={`${path}${route}`}
                             >
                               {t(description)}
                             </Link>
                           </li>
                         ))}
                     </ul>
-                    <I18nToggler/>
+                    <I18nToggler {...this.props}/>
                     <br/>
                     {
                       branchInfoList && 
@@ -166,7 +191,7 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                   </div>
                 </div>
               </nav>
-              {pathname == "/" && <MyCarousel testimonials={testimonials} interval={5000}/>}
+              {pathname == path && <MyCarousel testimonials={testimonials} interval={5000}/>}
             </div>
           )
         }
