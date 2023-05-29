@@ -28,7 +28,7 @@ const config = {
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: './[name].js',
+    filename: './[hash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -84,13 +84,13 @@ const config = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: '護家僱傭服務中心 - Respect Employment Services Centre',
-      template: 'src/index.html',
-    }),
     new MiniCssExtractPlugin({
       filename: '[hash].css',
       disable: !isProduction
+    }),
+    new HtmlWebpackPlugin({
+      title: '護家僱傭服務中心 - Respect Employment Services Centre',
+      template: 'src/index.html'
     })
   ],
 };
