@@ -22,70 +22,132 @@ import gallery11_prev from "app/assets/gallery11.jpg";
 
 import { Translation } from 'react-i18next';
 
+import slogan from "app/assets/slogan.jpg"
+import { testimonials, Testimonial } from "app/data/testimonials";
+interface MyCarouselProps {
+  interval: number,
+  testimonials: Testimonial[]
+}
+
+interface MyCarouselState {
+  index: number,
+  handle: number
+}
+
+class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
+  constructor(props: MyCarouselProps) {
+    super(props);
+    this.state = { index: 0, handle: NaN };
+  }
+  
+  componentDidMount() {
+    this.setState({
+      handle: window.setInterval(() => {
+        this.setState({index: (this.state.index + 1) % this.props.testimonials.length})
+      }, this.props.interval)
+    });
+  }
+
+  componentWillUnmount() {
+    window.clearInterval(this.state.handle);
+  }
+  
+  render() {
+    const { testimonials } = this.props;
+    const { index } = this.state;
+    return (
+      <div className="jumbotron jumbotron-fluid" style={{padding: "0px"}}>      
+        <div 
+          className="img-fluid jumbotron main-carousel" 
+          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('${slogan}')`}}>
+            {testimonials.map(({comment, from}, tIndex) => (
+              index == tIndex && 
+              <div key={tIndex} data-aos="fade-down" className="container">
+                <span className="lead">{comment}</span>
+                <br/>
+                <br/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <i className="fas fa-star"/>
+                <br/>
+                <span className="from">{from}</span>
+              </div>
+            ))}
+        </div>
+      </div>
+    );
+  }
+}
+
 export default () => {
   return (
-    <Translation>
-      {t => (
-        <div className="article-clean">
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <div className="intro">
-                  <h1 className="text-center" data-aos="fade-down">
-                    <strong>{t("company.name")}</strong>
-                  </h1>
-                </div>
-                <div className="text" data-aos="fade-down">
-                  <p>
-                    {t("home.line1")}
-                    <br />
-                    {t("home.line2")}
-                  </p>
-                  <div className="card">
-                    <div className="card-body">
-                      <blockquote className="blockquote" style={{ fontSize: "2.25rem" }}>
-                        {t("home.line4")}
-                        <footer className="blockquote-footer">{t("home.line3")}</footer>
-                      </blockquote>
-                    </div>
+    <React.Fragment>
+      <MyCarousel testimonials={testimonials} interval={5000}/>
+      <Translation>
+        {t => (
+          <div className="article-clean">
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                  <div className="intro">
+                    <h1 className="text-center" data-aos="fade-down">
+                      <strong>{t("company.name")}</strong>
+                    </h1>
                   </div>
-                  <div className="photo-gallery">
-                    <div className="container">
-                      <div className="intro">
-                        <h1 className="text-center" data-aos="fade-down">
-                          <strong>{t("company.photos")}</strong>
-                        </h1>
+                  <div className="text" data-aos="fade-down">
+                    <p>
+                      {t("home.line1")}
+                      <br />
+                      {t("home.line2")}
+                    </p>
+                    <div className="card">
+                      <div className="card-body">
+                        <blockquote className="blockquote" style={{ fontSize: "2.25rem" }}>
+                          {t("home.line4")}
+                          <footer className="blockquote-footer">{t("home.line3")}</footer>
+                        </blockquote>
                       </div>
-                      <div className="row photos">
-                        {
-                          [
-                            gallery1_new,
-                            gallery2_new,
-                            gallery3_new,
-                            gallery4_new,
-                            gallery5_new,
-                            gallery6_new,
-                            gallery7_new,
-                            gallery8_new,
-                            gallery1_prev,
-                            gallery2_prev,
-                            gallery3_prev,
-                            gallery4_prev,
-                            gallery5_prev,
-                            gallery6_prev,
-                            gallery7_prev,
-                            gallery8_prev,
-                            gallery9_prev,
-                            gallery10_prev,
-                            gallery11_prev
-                          ].map((gallery, index) => (
-                            <div key={index} className="col-sm-6 col-md-4 col-lg-3 item" data-aos="zoom-in">
-                              <a href={gallery} data-lightbox="photos">
-                                <img className="img-fluid" src={gallery} />
-                              </a>
-                            </div>
-                          ))
-                        }
+                    </div>
+                    <div className="photo-gallery">
+                      <div className="container">
+                        <div className="intro">
+                          <h1 className="text-center" data-aos="fade-down">
+                            <strong>{t("company.photos")}</strong>
+                          </h1>
+                        </div>
+                        <div className="row photos">
+                          {
+                            [
+                              gallery1_new,
+                              gallery2_new,
+                              gallery3_new,
+                              gallery4_new,
+                              gallery5_new,
+                              gallery6_new,
+                              gallery7_new,
+                              gallery8_new,
+                              gallery1_prev,
+                              gallery2_prev,
+                              gallery3_prev,
+                              gallery4_prev,
+                              gallery5_prev,
+                              gallery6_prev,
+                              gallery7_prev,
+                              gallery8_prev,
+                              gallery9_prev,
+                              gallery10_prev,
+                              gallery11_prev
+                            ].map((gallery, index) => (
+                              <div key={index} className="col-sm-6 col-md-4 col-lg-3 item" data-aos="zoom-in">
+                                <a href={gallery} data-lightbox="photos">
+                                  <img className="img-fluid" src={gallery} />
+                                </a>
+                              </div>
+                            ))
+                          }
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -93,8 +155,8 @@ export default () => {
               </div>
             </div>
           </div>
-        </div>
-      )}
-    </Translation>
+        )}
+      </Translation>
+    </React.Fragment>
   )
 }

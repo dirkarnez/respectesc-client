@@ -6,11 +6,10 @@ import {
   Redirect,
   RouteComponentProps
 } from "react-router-dom";
-
-import Nav from "app/components/Nav";
 import Footer from "app/components/Footer";
 import { routes } from "app/routes";
 import i18n from "app/i18n";
+import Nav from "./components/Nav";
 
 class Base extends React.Component<RouteComponentProps, {}> {
   constructor(props: RouteComponentProps) {
@@ -39,7 +38,7 @@ class Base extends React.Component<RouteComponentProps, {}> {
   render() {
     return (
       <div>
-          <Nav {...this.props}/>
+        <Nav {...this.props}/>
           <div style={{minHeight: "70vh"}}>
             <Switch>
               {

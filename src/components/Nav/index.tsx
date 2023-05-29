@@ -3,23 +3,13 @@ import { Link, RouteComponentProps } from "react-router-dom";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { Carousel } from "react-responsive-carousel";
 import logo from "app/assets/logo.svg";
-import slogan from "app/assets/slogan.jpg"
 import Tel from "app/components/Tel";
 import { routes } from "app/routes";
 import branchInfoList from "app/data/branches";
-import { testimonials, Testimonial } from "app/data/testimonials";
+
 import { Translation } from 'react-i18next';
 import i18n from "app/i18n";
 
-interface MyCarouselProps {
-  interval: number,
-  testimonials: Testimonial[]
-}
-
-interface MyCarouselState {
-  index: number,
-  handle: number
-}
 
 class I18nToggler extends React.Component<RouteComponentProps, {}> {
   render() {
@@ -76,54 +66,8 @@ class I18nToggler extends React.Component<RouteComponentProps, {}> {
   }
 }
 
-class MyCarousel extends React.Component<MyCarouselProps, MyCarouselState> {
-  constructor(props: MyCarouselProps) {
-    super(props);
-    this.state = { index: 0, handle: NaN };
-  }
-  
-  componentDidMount() {
-    this.setState({
-      handle: window.setInterval(() => {
-        this.setState({index: (this.state.index + 1) % this.props.testimonials.length})
-      }, this.props.interval)
-    });
-  }
 
-  componentWillUnmount() {
-    window.clearInterval(this.state.handle);
-  }
-  
-  render() {
-    const { testimonials } = this.props;
-    const { index } = this.state;
-    return (
-      <div className="jumbotron jumbotron-fluid" style={{padding: "0px"}}>      
-        <div 
-          className="img-fluid jumbotron main-carousel" 
-          style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('${slogan}')`}}>
-            {testimonials.map(({comment, from}, tIndex) => (
-              index == tIndex && 
-              <div key={tIndex} data-aos="fade-down" className="container">
-                <span className="lead">{comment}</span>
-                <br/>
-                <br/>
-                <i className="fas fa-star"/>
-                <i className="fas fa-star"/>
-                <i className="fas fa-star"/>
-                <i className="fas fa-star"/>
-                <i className="fas fa-star"/>
-                <br/>
-                <span className="from">{from}</span>
-              </div>
-            ))}
-        </div>
-      </div>
-    );
-  }
-}
-
-export default class Header extends React.Component<RouteComponentProps, {}> {
+export default class extends React.Component<RouteComponentProps, {}> {
   render() {
     const { location: { pathname }, match: { path }} = this.props;
 
@@ -191,7 +135,7 @@ export default class Header extends React.Component<RouteComponentProps, {}> {
                   </div>
                 </div>
               </nav>
-              {pathname == path && <MyCarousel testimonials={testimonials} interval={5000}/>}
+              {/* {pathname == path && <MyCarousel testimonials={testimonials} interval={5000}/>} */}
             </div>
           )
         }
