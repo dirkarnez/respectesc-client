@@ -27,7 +27,7 @@ export default () => (
                   />
                 </a>
                 <br />
-                <h5 dangerouslySetInnerHTML={{__html: `${t("licence_labour_department")}: 69023`}}/>
+                <h5 dangerouslySetInnerHTML={{__html: `${t("licence_labour_department")}: 722205`}}/>
               </div>
               <div className="col-sm-12 col-md-4 text-center" style={{ padding: "20px" }}>
                 <a href="https://hongkongpcg.dfa.gov.ph/" target="_blank">
