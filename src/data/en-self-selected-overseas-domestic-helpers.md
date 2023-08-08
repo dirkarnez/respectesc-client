@@ -22,7 +22,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $7,800 (covers document fee, visa fee. Also covers body check)</td>
+      <td>Negotiable</td>
     </tr>
   </tbody>
 </table>
@@ -43,7 +43,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $7,800 (covers document fee, visa fee. Also covers body check)</td>
+      <td>Negotiable</td>
     </tr>
   </tbody>
 </table>
