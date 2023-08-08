@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <th>印尼女傭</th>
-      <td>HK $16,980</td>
+      <td>面議</td>
     </tr>
   </tbody>
 </table>
