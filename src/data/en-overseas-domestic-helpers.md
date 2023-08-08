@@ -17,7 +17,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $18,980 (covers $3,000 air ticket. This price requires the domestic helper to have the all the documents and passport ready beforehand. If any of the document or passport expires, additional fees will be charged for replacement.)</td>
+      <td>Negotiable</td>
     </tr>
   </tbody>
 </table>
