@@ -17,7 +17,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $2,800</td>
+      <td>Negotiable</td>
     </tr>
   </tbody>
 </table>
