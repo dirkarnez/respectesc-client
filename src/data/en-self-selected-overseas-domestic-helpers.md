@@ -22,7 +22,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $13,980 (covers body check. Does not cover round-trip air tickets)</td>
+      <td>HK $13,980 (covers body check. Does not cover air tickets to Hong Kong)</td>
     </tr>
   </tbody>
 </table>
