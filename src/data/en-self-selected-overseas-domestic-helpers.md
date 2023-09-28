@@ -35,7 +35,7 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $7,500 (covers document fee and visa fee. Does not cover body check)</td>
+      <td>HK $8,880</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
@@ -43,7 +43,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>Negotiable</td>
+      <td>HK $10,980 (the helper should have all required documents ready. covers body check in Indonesia. Does not cover round-trip air tickets)</td>
     </tr>
   </tbody>
 </table>
