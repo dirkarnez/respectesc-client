@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <th>印尼女傭</th>
-      <td>面議</td>
+      <td>HK $3,500（包驗身）</td>
     </tr>
   </tbody>
 </table>
