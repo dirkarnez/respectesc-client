@@ -17,7 +17,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $17,980 (covers medical examination in Hong Kong, does not cover round-trip air tickets)</td>
+      <td>HK $17,980 (covers body check in Hong Kong, does not cover round-trip air tickets)</td>
     </tr>
   </tbody>
 </table>
