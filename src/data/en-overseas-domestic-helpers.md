@@ -17,7 +17,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>Negotiable</td>
+      <td>HK $16,980 - 18,980 (covers HK$3,000 one-way air ticket to Hong Kong,  As air ticket prices fluctuate at any time, the employer must pay the excess cost)</td>
     </tr>
   </tbody>
 </table>
