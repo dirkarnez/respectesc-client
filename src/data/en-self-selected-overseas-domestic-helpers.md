@@ -14,15 +14,15 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $5,800 (covers document fee and visa fee. Does not cover body check)</td>
+      <td>HK $5,880 (covers document fee and visa fee. Does not cover body check and round-trip air tickets)</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $6,500 (covers document fee, visa fee. Also covers body check)</td>
+      <td>HK $7,800</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>Negotiable</td>
+      <td>HK $13,980 (covers body check. Does not cover round-trip air tickets)</td>
     </tr>
   </tbody>
 </table>
