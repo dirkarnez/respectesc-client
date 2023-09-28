@@ -17,7 +17,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>Negotiable</td>
+      <td>HK $3,500 (covers body check)</td>
     </tr>
   </tbody>
 </table>
