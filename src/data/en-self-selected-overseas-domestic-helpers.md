@@ -22,7 +22,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $13,980 (covers body check. Does not cover air tickets to Hong Kong)</td>
+      <td>HK $13,980 (covers body check. Does not cover round-trip air tickets)</td>
     </tr>
   </tbody>
 </table>
@@ -43,7 +43,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $10,980 (the helper should have all required documents ready. covers body check in Indonesia. Does not cover round-trip air tickets)</td>
+      <td>HK $10,980 (the helper should have all required documents ready. covers body check in Indonesia. Does not cover air ticket to Hong Kong)</td>
     </tr>
   </tbody>
 </table>
