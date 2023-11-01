@@ -17,7 +17,8 @@ const Branch = ({
   faxAreaCode,
   email, 
   workingHourWeekday, 
-  workingHourWeekend
+  workingHourWeekend,
+  imageList
 }: BranchInfo) => {
   return (
     <Translation>
@@ -65,6 +66,19 @@ const Branch = ({
             <br />
             {t("sun_and_public_holidays")}:&nbsp;{t(workingHourWeekend)}
           </p>
+          {
+            Array.isArray(imageList) &&
+            <div>
+              {
+                imageList.map(imageSrc => {
+                  const img = imageSrc ? require(`app/assets/${imageSrc}`) : null;
+                  return (
+                    <img style={{ height: "400px" }} data-aos="fade-down" src={img ? img.default: undefined} className="img-fluid"/>
+                  )
+                })
+              }
+            </div>
+          }
         </div>
       )}
     </Translation>

@@ -32,7 +32,11 @@ const branchInfoList: BranchInfo[] = [
         faxAreaCode: "852",
         email: "respecthunghom@gmail.com",
         workingHourWeekday: "hung_hom_branch_workingHour_weekday",
-        workingHourWeekend: "hung_hom_branch_workingHour_weekend"
+        workingHourWeekend: "hung_hom_branch_workingHour_weekend",
+        imageList: [
+            "WhatsApp Image 2023-10-29 at 14.55.02.jpeg",
+            "WhatsApp Image 2023-10-29 at 14.56.19.jpeg"
+        ]
     }
     // ,{
     //     area: "新界",
@@ -61,7 +65,8 @@ export interface BranchInfo {
     faxAreaCode?: string,
     email: string,
     workingHourWeekday: string,
-    workingHourWeekend: string
+    workingHourWeekend: string,
+    imageList?: string[]
 }
 
 export default branchInfoList
