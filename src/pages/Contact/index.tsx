@@ -37,12 +37,15 @@ const Branch = ({
             }
           </p>
           <div data-aos="fade-down" className="iframe-container">
-            <iframe
-              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyA05OsZ4uYIUhCzhvoGc0rqr-iVu_q-usU&q=place_id:${placeId}`}
-              style={{border: "none"}}
-            >
-              <p>Your browser does not support iframes.</p>
-            </iframe>
+            {
+              placeId && 
+              <iframe
+                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyA05OsZ4uYIUhCzhvoGc0rqr-iVu_q-usU&q=place_id:${placeId}`}
+                style={{border: "none"}}
+              >
+                <p>Your browser does not support iframes.</p>
+              </iframe>
+            }
           </div>
           <br />
           <p>

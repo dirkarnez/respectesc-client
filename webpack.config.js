@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+const { resolve, join } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -84,10 +84,6 @@ const config = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[hash].css',
-      disable: !isProduction
-    }),
     new HtmlWebpackPlugin({
       title: '護家僱傭服務中心 - Respect Employment Services Centre',
       template: 'src/index.html'
@@ -96,6 +92,12 @@ const config = {
 };
 
 if (isProduction) {
+  config.plugins.push(    
+    new MiniCssExtractPlugin({
+      filename: '[contenthash].css'
+    })
+  );
+
   config.optimization = {
     minimizer: [
       new TerserPlugin(),
@@ -103,13 +105,18 @@ if (isProduction) {
   };
 } else {
   config.devServer = {
+    host: '0.0.0.0',
+    https: true,
     port: 3000, // https://webpack.js.org/configuration/dev-server/#devserverport
     open: true, // https://webpack.js.org/configuration/dev-server/#devserveropen
     hot: true, // https://webpack.js.org/configuration/dev-server/#devserverhot
     compress: true, // https://webpack.js.org/configuration/dev-server/#devservercompress
-    stats: 'errors-only', // https://webpack.js.org/configuration/dev-server/#devserverstats-
-    overlay: true, // https://webpack.js.org/configuration/dev-server/#devserveroverlay
-    publicPath: '/',
+    // stats: 'errors-only', // https://webpack.js.org/configuration/dev-server/#devserverstats-
+    // overlay: true, // https://webpack.js.org/configuration/dev-server/#devserveroverlay
+    static: {
+			directory: join(__dirname, 'dist'),
+			publicPath: '/',
+		},
     historyApiFallback: true
   };
 }

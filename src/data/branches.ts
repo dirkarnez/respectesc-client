@@ -20,6 +20,19 @@ const branchInfoList: BranchInfo[] = [
         email: "respect.mendy@gmail.com",
         workingHourWeekday: "san_po_kong_branch_workingHour_weekday",
         workingHourWeekend: "san_po_kong_branch_workingHour_weekend"
+    },
+    {
+        city: "hung_hom",
+        address: "hung_hom_branch_address",
+        travelInstruction: "hung_hom_branch_travel_instruction",
+        placeId: "ChIJF_bA594ABDQRjYUqyfZ2NMU",
+        tel: "35763876",
+        fax: "35763876",
+        telAreaCode: "852",
+        faxAreaCode: "852",
+        email: "respecthunghom@gmail.com",
+        workingHourWeekday: "hung_hom_branch_workingHour_weekday",
+        workingHourWeekend: "hung_hom_branch_workingHour_weekend"
     }
     // ,{
     //     area: "新界",
@@ -40,7 +53,8 @@ export interface BranchInfo {
     city: string,
     address: string,
     travelInstruction?: string,
-    placeId: string,
+    placeId?: string,
+    placeURL?: string,
     tel: string,
     telAreaCode: string,
     fax?: string,
