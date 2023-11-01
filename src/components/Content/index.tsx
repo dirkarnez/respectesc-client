@@ -25,7 +25,7 @@ const Content: React.FunctionComponent<{}> = ({ children }) => (
                 },
                 img: {
                     component: ({src}: React.ImgHTMLAttributes<HTMLImageElement>) => (
-                        <img data-aos="fade-down" src={src ? require(`app/assets/${src}`): undefined} className="img-fluid"/>
+                        <img data-aos="fade-down" src={src ? require(`app/assets/${src}`).default: undefined} className="img-fluid"/>
                     )
                 },
                 p: {
