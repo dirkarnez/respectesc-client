@@ -43,7 +43,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $10,980 (the helper should have all required documents ready, otherwise there will be extra charges. covers body check in Indonesia. Does not cover air ticket to Hong Kong)</td>
+      <td>Negotiable</td>
     </tr>
   </tbody>
 </table>
