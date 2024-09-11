@@ -9,15 +9,15 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $14,980 (covers $800 air ticket)</td>
+      <td>HK $14,980 (covers HK $800 air ticket)</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $13,980 (covers $1,000 air ticket)</td>
+      <td>HK $13,980 (covers HK $1,000 air ticket)</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $16,980 - 18,980 (covers HK$3,000 one-way air ticket to Hong Kong,  As air ticket prices fluctuate at any time, the employer must pay the excess cost)</td>
+      <td>HK $16,980 - HK $18,980 (covers HK $2,500 air ticket)</td>
     </tr>
   </tbody>
 </table>
