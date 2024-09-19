@@ -26,7 +26,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "@types/markdown-to-jsx": "^6.9.0",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.8.16",
+    "@types/react": "^16.14.61",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
     "babel-loader": "^8.0.5",
