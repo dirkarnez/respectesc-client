@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": null,
+        "Windows PowerShell": null,
+        "Git Bash": {
+            "args": [
+                "-i"
+            ],
+            "icon": "terminal-bash",
+            "overrideName": true,
+            "path": "${env:USERPROFILE}\\Downloads\\PortableGit\\git-bash.exe",
+            "source": "Git Bash"
+        },
+        "Command Prompt": {
+            "path": ["${env:windir}\\System32\\cmd.exe"],
+            "env": { 
+                "PATH": "${env:USERPROFILE}\\Downloads\\node-v16.16.0-win-x64;${env:USERPROFILE}\\Downloads\\PortableGit\\bin"
+            }
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}
