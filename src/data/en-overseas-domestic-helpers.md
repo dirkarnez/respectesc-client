@@ -23,17 +23,19 @@ Prices:
 </table>
 
 ##### Please note:
-  - Above prices include all document handling fees, visa fees and body check in Hong Kong.
-  - Above prices do not include COVID-19 test and hotel fees (the employer is responsible for these two)
+  - Above prices include round-trip air ticket fee, all document handling fee, administrative fee and visa fee.
+  - By law, Filipino domestic helpers' processing fees in the Philippines are the responsibility of the employer.
+  - The air ticket fees fluctuate with the seasons and are subject to change. Any additional cost beyond the specified price responsible by the Centre will need to be covered by the employer.
 
 ##### Price above includes (except specifically noted item above):
-  - Fees for local consulate contract, documents and procedures
-  - Fees for handling documents and procedures of the related government
+  - Fees for local consulate contract, documents
+  - Administration fee and fees for handling documents of the related governments
   - Working visa fee for the Hong Kong Immigration Department
   - All document fees
   - Plane ticket to Hong Kong, departure tax and airport tax
   - Transportation fee (pick helper up from airport and bring to our company)
   - Filipino, Cambodian, Indonesian translation service and helper counselling
   - Helper registration at the consulate and assist helper to collect Hong Kong Identity Card
-  - The helper can be changed once within 12 months (80% of the original price is required)
+  - Within 12 months, replacing domestic helpers will incur an additional 80% of the original fee
   - Body check in Hong Kong
+  - We can help applying local labor insurance (no extra charge is required)

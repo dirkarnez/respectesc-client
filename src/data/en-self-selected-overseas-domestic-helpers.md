@@ -14,15 +14,15 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $5,880 (covers document fee and visa fee. Does not cover body check and round-trip air tickets)</td>
+      <td>HK $5,880 (does not cover air tickets)</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $7,800</td>
+      <td>HK $7,800 (does not cover air tickets)</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $13,980 (covers body check. Does not cover round-trip air tickets)</td>
+      <td>HK $7,800 (does not cover air tickets)</td>
     </tr>
   </tbody>
 </table>
@@ -35,11 +35,11 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $8,880</td>
+      <td>HK $8,880 (does not cover air tickets)</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $7,800 (covers document fee, visa fee. Also covers body check)</td>
+      <td>HK $7,800 (does not cover air tickets)</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
@@ -48,7 +48,11 @@ Prices:
   </tbody>
 </table>
 
+##### Please note:
+- Self-selected domestic helper fees above do not include body check, air tickets and airport pickup services. Additional arrangements can be discussed if necessary.
+
 ##### Price above includes (except specifically noted item above):
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
-  - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong
+  - Centre's administrative charge 
+  - We can help applying local labor insurance (no extra charge is required)

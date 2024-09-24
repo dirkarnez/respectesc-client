@@ -9,15 +9,15 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $14,980</td>
+      <td>HK $14,980 (does not cover air tickets)</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $14,980</td>
+      <td>HK $14,980 (does not cover air tickets)</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $17,980 (covers body check in Hong Kong, does not cover round-trip air tickets)</td>
+      <td>HK $17,980 (covers body check in Hong Kong, does not cover air tickets)</td>
     </tr>
   </tbody>
 </table>
@@ -27,6 +27,6 @@ Prices:
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
   - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong
-  - The helper can be changed once within 12 months (80% of the original price is required)
-  - We can help with local labor insurance
-  - Air ticket to Hong Kong is not included
+  - Within 12 months, replacing domestic helpers will incur an additional 80% of the original fee
+  - We can help applying local labor insurance (no extra charge is required)
+  - Air ticket fee to Hong Kong is not included

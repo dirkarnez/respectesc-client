@@ -26,4 +26,6 @@ Prices:
 ##### Price above includes (except specifically noted item above):
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
-  - Centre's service charge 
+  - Centre's administrative charge
+  - Does not cover air tickets
+  - We can help applying local labor insurance (no extra charge is required)
