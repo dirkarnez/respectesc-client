@@ -29,4 +29,4 @@ Prices:
   - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong
   - Within 12 months, replacing domestic helpers will incur an additional 80% of the original fee
   - Assist to apply local labor insurance (no extra charge is required)
-  - One way air ticket to Hong Kong is not included
+  - One way air tickets to Hong Kong are not included
