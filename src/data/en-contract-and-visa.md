@@ -1,7 +1,7 @@
-# Contract renewal and visa application commission
+# Contract Renewal
   
-If employer wants to renew the contract with the domestic helper, please do so two months before the expiry date.
-  
+To renew the contract with the domestic helper, two months before the visa expiry date.
+
   
 Prices:
 
@@ -17,7 +17,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $3,500 (covers body check)</td>
+      <td>HK $3,500</td>
     </tr>
   </tbody>
 </table>
@@ -27,5 +27,6 @@ Prices:
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
   - Centre's administrative charge
-  - Does not cover air tickets
-  - We can help applying local labor insurance (no extra charge is required)
+  - Air tickets are not included
+  - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong (for domestic helpers from Indonesia only)
+  - Assist to apply local labor insurance (no extra charge is required)
