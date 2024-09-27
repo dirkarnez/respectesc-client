@@ -1,6 +1,6 @@
-# Local overseas domestic helpers completed previous contract
+# Local Overseas Domestic Helpers Completed Previous Contract
   
-Foreword: To meet urgent needs of some employers, we have a large number of local overseas domestic helpers available for immediate appointment and employment. Some of them have good testimonials from former employers for review. An immediate interview appointment can be arranged during office hours.
+To employ local overseas domestic helpers who are available for immediate employment
   
   
 Prices:
@@ -9,24 +9,24 @@ Prices:
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $14,980 (does not cover air tickets)</td>
+      <td>HK $14,980</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $14,980 (does not cover air tickets)</td>
+      <td>HK $14,980</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $17,980 (covers body check in Hong Kong, does not cover air tickets)</td>
+      <td>HK $17,980</td>
     </tr>
   </tbody>
 </table>
 
 
-##### Price above includes (except specifically noted item above):
+##### Price above includes:
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
   - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong
   - Within 12 months, replacing domestic helpers will incur an additional 80% of the original fee
-  - We can help applying local labor insurance (no extra charge is required)
-  - Air ticket fee to Hong Kong is not included
+  - Assist to apply local labor insurance (no extra charge is required)
+  - One way air ticket to Hong Kong is not included
