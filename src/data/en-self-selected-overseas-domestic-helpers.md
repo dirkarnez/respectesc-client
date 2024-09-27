@@ -1,28 +1,25 @@
-# Self-selected overseas domestic helpers
+# Direct Hire From Overseas and Local
   
-Employ overseas domestic helpers directly.
-  
-
-Direct employment of overseas domestic helpers refers to the employment of overseas domestic helpers who are not affiliated with the Centre. We take commissions to process the document procedures for direct employment of overseas domestic helpers from the Philippines, Cambodia and Indonesia. The price starts at only HK$5880. 
+To employ overseas domestic helpers from Philippines, Cambodia and Indonesia who are not affiliated with the Centre, we process the document procedures for direct employment.
 
 Prices:
 <br>
 <br>
 
-#### Self-selected from local
+#### Direct Hire from Local
 <table>
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $5,880 (does not cover air tickets)</td>
+      <td>HK $5,880</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $7,800 (does not cover air tickets)</td>
+      <td>HK $7,800</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $7,800 (does not cover air tickets)</td>
+      <td>HK $7,800</td>
     </tr>
   </tbody>
 </table>
@@ -30,16 +27,16 @@ Prices:
 <br>
 <br>
 
-#### Self-selected from oversea
+#### Direct Hire from Oversea
 <table>
   <tbody>
     <tr>
       <th>From Philippines</th>
-      <td>HK $8,880 (does not cover air tickets)</td>
+      <td>HK $8,880</td>
     </tr>
     <tr>
       <th>From Cambodia</th>
-      <td>HK $7,800 (does not cover air tickets)</td>
+      <td>HK $7,800</td>
     </tr>
     <tr>
       <th>From Indonesia</th>
@@ -54,5 +51,6 @@ Prices:
 ##### Price above includes (except specifically noted item above):
   - Working visa fee for the Hong Kong Immigration Department
   - Notary fees for the issuance of contract by the consulate in Hong Kong
-  - Centre's administrative charge 
-  - We can help applying local labor insurance (no extra charge is required)
+  - Centre's administrative charge
+  - One way air tickets, airport pick-up services and body check in Hong Kong are not included
+  - Assist to apply local labor insurance (no extra charge is required)
