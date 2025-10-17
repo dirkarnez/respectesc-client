@@ -28,7 +28,7 @@ const config = {
   },
   output: {
     path: resolve(__dirname, 'dist'),
-    filename: './[hash].js',
+    filename: './[contenthash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -106,7 +106,9 @@ if (isProduction) {
 } else {
   config.devServer = {
     host: '0.0.0.0',
-    https: true,
+    server: {
+      type: 'https'
+    },
     port: 3000, // https://webpack.js.org/configuration/dev-server/#devserverport
     open: true, // https://webpack.js.org/configuration/dev-server/#devserveropen
     hot: true, // https://webpack.js.org/configuration/dev-server/#devserverhot
