@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # <-- clone with complete history
-
+          
       - uses: yesolutions/mirror-action@v0.7.0
         with:
             REMOTE: ssh://git@bitbucket.org/dirkarnez/${{ github.event.repository.name }}.git
