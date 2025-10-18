@@ -22,7 +22,9 @@ Prices:
   </tbody>
 </table>
 
-\* By law, Filipino domestic helpers' processing fees in the Philippines are borne by employer.
+<strong>\* By law, Filipino domestic helpers' processing fees in the Philippines are borne by employer.</strong>
+<br>
+<br>
 
 ##### Price above includes one way air ticket fee (covers up to HK $800 for Philippines, HK $1,000 for Cambodia and HK $2,500 for Indonesia)
 - Fees for local consulate contract, documents
