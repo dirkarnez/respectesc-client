@@ -1,6 +1,6 @@
 # Direct Hire From Overseas and Local
   
-To employ overseas domestic helpers from Philippines, Cambodia and Indonesia who are not affiliated with the Centre, we process the document procedures for direct employment.
+To employ overseas domestic helpers from the Philippines, Cambodia and Indonesia who are not affiliated with the Centre. We process the document procedures for direct employment of overseas domestic helpers from the Philippines, Cambodia and Indonesia.
 
 Prices:
 <br>
@@ -19,7 +19,7 @@ Prices:
     </tr>
     <tr>
       <th>From Indonesia</th>
-      <td>HK $7,800</td>
+      <td>Negotiable</td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Prices:
   </tbody>
 </table>
 
-##### Please note:
-- Self-selected domestic helper fees above do not include body check, air tickets and airport pickup services. Additional arrangements can be discussed if necessary.
+<!-- ##### Please note:
+- Self-selected domestic helper fees above do not include body check, air tickets and airport pickup services. Additional arrangements can be discussed if necessary. -->
 
 ##### Price above includes (except specifically noted item above):
-  - Working visa fee for the Hong Kong Immigration Department
-  - Notary fees for the issuance of contract by the consulate in Hong Kong
-  - Centre's administrative charge
-  - One way air tickets, airport pick-up services and body check in Hong Kong are not included
-  - Assist to apply local labor insurance (no extra charge is required)
+- Working visa fee for the Hong Kong Immigration Department
+- Notary fees for the issuance of contract by the consulate in Hong Kong
+- Centre's administrative charge
+- One way air ticket, airport pick-up services and body check in Hong Kong are not included
+- Assist to apply local labor insurance (no extra charge is required)

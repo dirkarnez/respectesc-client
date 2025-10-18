@@ -24,9 +24,10 @@ Prices:
 
 
 ##### Price above includes:
-  - Working visa fee for the Hong Kong Immigration Department
-  - Notary fees for the issuance of contract by the consulate in Hong Kong
-  - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong
-  - Within 12 months, replacing domestic helpers will incur an additional 80% of the original fee
-  - Assist to apply local labor insurance (no extra charge is required)
-  - One way air tickets to Hong Kong are not included
+- Working visa fee for the Hong Kong Immigration Department
+- Notary fees for the issuance of contract by the consulate in Hong Kong
+- Body check (Including pregnancy test, Hepatitis B, Chest and Lung, Venereal Disease and AIDS test) in Hong Kong
+- Within 12 months, Replacing domestic helpers will incur an additional 80% of the original fee
+- One way air ticket to Hong Kong are not included
+- Assist to apply local labor insurance (no extra charge is required)
+

@@ -22,7 +22,7 @@
     </tr>
     <tr>
       <th>印尼女傭</th>
-      <td>HK $7,800 （不包機票）</td>
+      <td>另議</td>
     </tr>
   </tbody>
 </table>

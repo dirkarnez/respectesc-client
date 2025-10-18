@@ -28,5 +28,5 @@ Prices:
   - Notary fees for the issuance of contract by the consulate in Hong Kong
   - Centre's administrative charge
   - Air tickets are not included
-  - Body check (including pregnancy test, Hepatitis B, chest and lung, venereal disease and AIDS test) in Hong Kong (for domestic helpers from Indonesia only)
+  - Body check (Including Pregnancy test, Hepatitis B, Chest and Lung, Venereal Disease and AIDS test in Hong Kong for domestic helpers from Indonesia only)
   - Assist to apply local labor insurance (no extra charge is required)

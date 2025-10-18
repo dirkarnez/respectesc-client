@@ -47,7 +47,7 @@ const resources = {
             "domestic_helpers.local_overseas.content": en_local_overseas_domestic_helpers,
             "contract_and_visa.title": "Contract renewal and visa application commission",
             "contract_and_visa.content": en_contract_and_visa,
-            "domestic_helpers.self_selected_overseas.title": "Self-selected overseas domestic helpers",
+            "domestic_helpers.self_selected_overseas.title": "Direct Hire Domestic Helpers",
             "domestic_helpers.self_selected_overseas.content": en_self_selected_overseas_domestic_helpers,
             "compensation_insurance.title": "Compensation insurance for domestic helpers",
             "compensation_insurance.content": en_compensation_insurance,
