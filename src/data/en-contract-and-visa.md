@@ -24,9 +24,9 @@ Prices:
 
 
 ##### Price above includes (except specifically noted item above):
-  - Working visa fee for the Hong Kong Immigration Department
-  - Notary fees for the issuance of contract by the consulate in Hong Kong
-  - Centre's administrative charge
-  - Air tickets are not included
-  - Body check (Including Pregnancy test, Hepatitis B, Chest and Lung, Venereal Disease and AIDS test in Hong Kong for domestic helpers from Indonesia only)
-  - Assist to apply local labor insurance (no extra charge is required)
+- Working visa fee for the Hong Kong Immigration Department
+- Notary fees for the issuance of contract by the consulate in Hong Kong
+- Centre's administrative charge
+- Air tickets are not included
+- Body check (Including Pregnancy test, Hepatitis B, Chest and Lung, Venereal Disease and AIDS test in Hong Kong for domestic helpers from Indonesia only)
+- Assist to apply local labor insurance (no extra charge is required)
