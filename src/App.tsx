@@ -39,17 +39,17 @@ class Base extends React.Component<RouteComponentProps, {}> {
     return (
       <div>
         <Nav {...this.props}/>
-          <div style={{minHeight: "70vh"}}>
-            <Switch>
-              {
-                routes.map(({ route, component }, index) => (
-                  <Route key={index} exact={route == "/"} path={`${this.props.match.url}${route}`} component={component}/>
-                ))
-              }
-              <Redirect to="/"/>
-            </Switch>
-          </div>
-          <Footer/>
+        <div style={{minHeight: "70vh"}}>
+          <Switch>
+            {
+              routes.map(({ route, component }, index) => (
+                <Route key={index} exact={route == "/"} path={`${this.props.match.url}${route}`} component={component}/>
+              ))
+            }
+            <Redirect to="/"/>
+          </Switch>
+        </div>
+        <Footer {...this.props}/>
       </div>
     );
   }

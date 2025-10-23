@@ -4,8 +4,9 @@ import philippineConsulateGeneral from "app/assets/philippine-consulate-general.
 import cambodia from "app/assets/cambodia.png";
 import { Link } from "react-router-dom";
 import { Translation } from 'react-i18next';
+import { RouteComponentProps } from "react-router-dom";
 
-export default () => (
+const Footer: React.FunctionComponent<RouteComponentProps> = ({ match: { path }}) => (
   <Translation>
     {t => (
       <div
@@ -64,7 +65,10 @@ export default () => (
             </div>
             <br/>
             <div className="row justify-content-center" style={{ textAlign: "center" }}>
-              <Link to="/privacy"><span style={{color: "#ffffff"}}>{t("privacy_statement")}</span></Link>
+              <Link to={`${path}/privacy`}><span style={{color: "#ffffff"}}>{t("privacy_statement")}</span></Link>
+            </div>
+            <div className="row justify-content-end" style={{marginTop: "5rem"}}>
+              <Link to={`${path}/login`}><span style={{color: "#ffffff"}}>Login</span></Link>
             </div>
           </div>
         </footer>
@@ -72,3 +76,5 @@ export default () => (
     )}
   </Translation>
 );
+
+export default Footer;

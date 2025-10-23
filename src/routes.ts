@@ -6,6 +6,8 @@ import Service from "./pages/Service";
 import Faqs from "./pages/Faqs";
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
+import Login from "./pages/Login";
+
 
 interface HeaderMenuRoute {
     route: string,
@@ -21,5 +23,6 @@ export const routes: HeaderMenuRoute[] = [
     { route: "/faqs", description: "route.faqs", onMenu: true, component: Faqs },
     { route: "/quality-and-training", description: "route.quality_training", onMenu: true, component: QualityTraining },
     { route: "/contact", description: "route.contact_us", onMenu: true, component: Contact },
-    { route: "/privacy", description: "route.privacy_policy", onMenu: false, component: Privacy }
+    { route: "/privacy", description: "route.privacy_policy", onMenu: false, component: Privacy },
+    { route: "/login", description: "login", onMenu: false, component: Login }
 ];
