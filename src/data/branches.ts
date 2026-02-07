@@ -9,7 +9,7 @@ const branchInfoList: BranchInfo[] = [
         email: "respect.esc@gmail.com",
         workingHourWeekday: "kwai_chung_branch_workingHour_weekday",
         workingHourWeekend: "kwai_chung_branch_workingHour_weekend"
-    },
+    }/*,
     {
         city: "san_po_kong",
         address: "san_po_kong_branch_address",
@@ -37,7 +37,7 @@ const branchInfoList: BranchInfo[] = [
             "WhatsApp Image 2023-10-29 at 14.55.02.jpeg",
             "WhatsApp Image 2023-10-29 at 14.56.19.jpeg"
         ]
-    }
+    }*/
     // ,{
     //     area: "新界",
     //     city: "荃灣",
