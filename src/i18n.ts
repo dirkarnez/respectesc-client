@@ -113,7 +113,7 @@ const resources = {
             "quality_training": zhHK_quality_training,
             "route.contact_us": "聯絡我們",
             "route.privacy_policy": "私隱聲明",
-            "branch": "分行",
+            "branch": "行",
             "mon_to_sat": "星期一至六",
             "sun_and_public_holidays": "星期日及公眾假期",
             "kwai_chung": "葵涌",
