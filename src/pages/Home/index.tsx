@@ -120,8 +120,6 @@ export default () => {
                         <div className="row photos">
                           {
                             [
-                              gallery1_new,
-                              gallery2_new,
                               gallery3_new,
                               gallery4_new,
                               gallery5_new,
